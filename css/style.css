@@ -1,11 +1,163 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-h1, h2, h3, h4{
+/* ===== TYPOGRAPHY ===== */
+
+h1, h2, h3, h4, h5{
     font-family: Righteous, sans-serif;
 }
 
+h1{
+   font-size: 150px;
+   color: var(--c-green);
+}
 
 p{
     font-family: Nunito, sans-serif;
+}
+
+/* ===== VARIABELEN ===== */
+
+:root {
+  --c-yellow: #ffc976;
+  --c-green:  #afbe9d;
+  --c-orange: #e2895d;
+  --c-blue:   #718eae;
+}
+
+/* ===== INDEX ===== */
+
+/* ===== HERO ===== */
+.header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 60px;
+  padding: 120px 80px 80px;
+}
+
+.header-wrapper h1 {
+  font-size: 150px;
+  color: var(--c-green);
+  margin: 0;
+  line-height: 0.9;
+}
+
+.header-wrapper h3 {
+  width: 100%;
+  font-size: 1.4rem;
+  color: var(--c-blue);
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+.header-wrapper p {
+  flex: 1;
+  max-width: 500px;
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.kenzahouben-index {
+  flex: 0 0 400px;
+  width: 400px;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 200px 200px 24px 24px;
+}
+
+/* ===== PROJECTEN SECTIE ===== */
+.index-wrapper {
+  position: relative;
+  padding: 80px 80px 100px;
+}
+
+.background-index {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.backgroundnoise-index {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.three-projects {
+  position: relative;
+  z-index: 1;        /* boven de background */
+}
+
+.three-projects h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.three-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-row {
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===== PROJECTKAARTEN ===== */
+.project-index {
+  flex: 1;
+  max-width: 320px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  cursor: pointer;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.project-index:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 44px rgba(0,0,0,.15);
+}
+
+.project-index h5 {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin: 22px 0 0 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Tag-kleuren per categorie */
+.project-index:nth-child(1) h5 { background: var(--c-orange); color: #fff; }
+.project-index:nth-child(2) h5 { background: var(--c-green);  color: #2b2b2b; }
+.project-index:nth-child(3) h5 { background: var(--c-green);  color: #2b2b2b; }
+
+.project-photo-index {
+  width: 100%;
+  height: 240px;          /* zelfde hoogte voor elke foto */
+  object-fit: cover;      /* dit zorgt dat ze allemaal even groot zijn */
+  display: block;
+  margin-top: 12px;
+}
+
+.project-index h4 {
+  font-size: 1.3rem;
+  padding: 12px 22px 22px;
+  color: #2b2b2b;
 }
