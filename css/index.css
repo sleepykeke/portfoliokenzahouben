@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+/* ==================================================
+   BASIS
+   ================================================== */
+
+html {
+    font-size: 16px;
+}
+
+
+/* ==================================================
+   VARIABELEN
+   ================================================== */
+
+:root {
+    --c-yellow: #ffc976;
+    --c-green: #afbe9d;
+    --c-orange: #e2895d;
+    --c-blue: #718eae;
+}
+
+/* ==================================================
+   INDEX
+   ================================================== */
+
+.index-body {
+    margin: 0;
+}
+
+
+/* ==================================================
+   INTRO
+   ================================================== */
+
+.header-wrapper {
+    position: relative;
+    min-height: 26.0625rem;
+}
+
+.index-intro {
+    position: absolute;
+    top: 1.5625rem;
+    left: 1.25rem;
+}
+
+
+/* ==================================================
+   NAAM
+   ================================================== */
+
+.index-intro h1 {
+    margin: 0;
+    color: var(--c-green);
+    line-height: 0.88;
+}
+
+
+/* ==================================================
+   ONDERTITEL
+   ================================================== */
+
+.index-intro h3 {
+    margin: 0.875rem 0 0 0.1875rem;
+    line-height: 1;
+    padding-top: 1.25rem;
+}
+
+
+/* ==================================================
+   INTRODUCTIETEKST
+   ================================================== */
+
+.index-intro p {
+    width: 43.75rem;
+    margin: 1.4375rem 0 0 0;
+    line-height: 1rem;
+    padding-top: 1.25rem;
+}
+
+
+/* ==================================================
+   PROJECTEN
+   ================================================== */
+
+.three-projects {
+    position: relative;
+    overflow: hidden;
+
+    padding: 2.5rem 0;
+    margin-top: 9.375rem;
+
+    box-sizing: border-box;
+}
+
+
+/* ==================================================
+   NOISE ACHTERGROND
+   ================================================== */
+
+.backgroundnoise-index {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    z-index: 0;
+}
+
+
+/* ==================================================
+   PROJECT TITEL
+   ================================================== */
+
+.three-projects h2 {
+    position: relative;
+    z-index: 1;
+
+    margin: 0;
+    text-align: center;
+
+    color: white;
+}
+
+
+/* ==================================================
+   PROJECTEN RIJ
+   ================================================== */
+
+.projects-row {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    margin-top: 2.5rem;
+    padding: 0 2rem;
+}
+
+
+/* ==================================================
+   INDIVIDUEEL PROJECT
+   ================================================== */
+
+.project-index {
+    position: relative;
+    width: 20rem;
+}
+
+
+/* ==================================================
+   PROJECT AFBEELDING
+   ================================================== */
+
+.project-photo-index {
+    display: block;
+
+    width: 20rem;
+    height: 21.5rem;
+
+    object-fit: cover;
+
+    border-radius: 2.5rem;
+}
+
+
+/* ==================================================
+   GROEN LABEL
+   ================================================== */
+
+.project-index h5 {
+    position: absolute;
+    z-index: 3;
+
+    top: -1rem;
+    right: -1rem;
+
+    margin: 0;
+
+    padding: 0.9rem 1.3rem;
+
+    background-color: var(--c-green);
+    color: white;
+
+    border-radius: 2rem;
+
+    white-space: nowrap;
+}
+
+
+/* ==================================================
+   PROJECT KNOPPEN
+   ================================================== */
+
+.project-button {
+    position: absolute;
+    z-index: 3;
+
+    bottom: -1.25rem;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    margin: 0;
+    padding: 0.85rem 1.5rem;
+
+    border: none;
+    border-radius: 2rem;
+
+    background-color: var(--c-yellow);
+    color: white;
+    text-decoration: none;
+
+    white-space: nowrap;
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.project-button:hover {
+    transform: translateX(-50%) translateY(-0.2rem) scale(1.01);
+
+    box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.12);
+
+    background-color: var(--c-yellow);
+}
+
+
+/* ==================================================
+   ZIE MEER KNOP
+   ================================================== */
+
+.see-more {
+    position: relative;
+    z-index: 2;
+
+    display: block;
+    width: fit-content;
+
+    margin: 4rem auto 0;
+    padding: 0.85rem 1.5rem;
+
+    border: none;
+    border-radius: 2rem;
+
+    background-color: var(--c-yellow);
+    color: white;
+
+    cursor: pointer;
+    text-decoration: none;
+
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.see-more:hover {
+    transform: translateY(-0.2rem) scale(1.01);
+
+    box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.12);
+
+    background-color: var(--c-yellow);
+}
+
+/* ==================================================
+   SKILLS
+   ================================================== */
+
+.skills {
+    width: 100%;
+    padding: 6rem 3.5rem 7rem;
+    box-sizing: border-box;
+}
+
+
+/* ==================================================
+   HARD SKILLS TITEL
+   ================================================== */
+
+.skills h2 {
+    margin: 0 0 2rem 0;
+}
+
+
+/* ==================================================
+   FILTER KNOPPEN
+   ================================================== */
+
+.skills-filters {
+    display: flex;
+    gap: 3rem;
+
+    margin-bottom: 3.5rem;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 1rem 1rem 1.5rem;
+
+    scrollbar-width: none;
+    box-sizing: border-box;
+}
+
+.skills-filters::-webkit-scrollbar {
+    display: none;
+}
+
+
+.skill-filter {
+    flex: 0 0 auto;
+
+    border: none;
+    border-radius: 3rem;
+
+    padding: 1rem 2.5rem;
+
+    background-color: #ffca72;
+    color: white;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Actieve knop */
+
+.skill-filter.active {
+    background-color: #afc09e;
+}
+
+
+/* Hover */
+
+.skill-filter:hover {
+    transform: scale(1.03);
+
+    box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.12);
+}
+
+
+/* ==================================================
+   HARD SKILLS CARDS
+   ================================================== */
+
+.hard-skills {
+    display: flex;
+    gap: 2rem;
+
+    width: 100%;
+
+    overflow-x: auto;
+    overflow-y: visible;
+
+    padding: 1rem 0 1.5rem;
+
+    scrollbar-width: none;
+
+    flex-wrap: nowrap;
+}
+
+.hard-skills::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* ==================================================
+   SKILL CARD
+   ================================================== */
+
+.skill-card {
+    flex: 0 0 19rem;
+
+    height: 10rem;
+
+    padding: 1.5rem;
+
+    box-sizing: border-box;
+
+    border-radius: 1.2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 160, 95, 0.9),
+            rgba(130, 160, 195, 0.9) 50%,
+            rgba(210, 165, 145, 0.9)
+        );
+
+    background-size: 200% 200%;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-position 0.5s ease;
+}
+
+
+.skill-card:hover {
+    transform: translateY(-0.4rem);
+
+    box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.15);
+
+    background-position: 100% 100%;
+}
+
+
+/* ==================================================
+   SKILL TITEL
+   ================================================== */
+
+.skill-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    color: white;
+}
+
+
+/* ==================================================
+   LOGO
+   ================================================== */
+
+.skill-logo {
+    width: 1.6rem;
+    height: 1.6rem;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+
+/* ==================================================
+   SKILL LEVEL
+   ================================================== */
+
+.skill-level {
+    display: flex;
+    gap: 0.65rem;
+}
+
+
+/* Bolletjes */
+
+.level {
+    width: 1.15rem;
+    height: 1.15rem;
+
+    border-radius: 50%;
+
+    background-color: white;
+}
+
+
+/* Actieve bolletjes */
+
+.level.active {
+    background-color: #ffca72;
+}
+
+
+/* ==================================================
+   SOFT SKILLS
+   ================================================== */
+
+.soft-title {
+    text-align: right;
+
+    margin: 6rem 0 2.5rem;
+}
+
+
+/* ==================================================
+   SOFT SKILLS CONTAINER
+   ================================================== */
+
+.soft-skills {
+    display: flex;
+    gap: 1.5rem;
+
+    width: 100%;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 1rem 0 1.5rem;
+
+    scrollbar-width: none;
+
+    flex-wrap: nowrap;
+}
+
+.soft-skills p {
+    color: white;
+}
+
+.soft-skills::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* ==================================================
+   SOFT CARD
+   ================================================== */
+
+.soft-card {
+    flex: 0 0 21rem;
+
+    min-height: 10rem;
+
+    box-sizing: border-box;
+
+    padding: 1.5rem;
+
+    border-radius: 1.2rem;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 160, 95, 0.9),
+            rgba(130, 160, 195, 0.9) 50%,
+            rgba(210, 165, 145, 0.9)
+        );
+
+    background-size: 200% 200%;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-position 0.5s ease;
+}
+
+.soft-card h5 {
+    margin: 0 0 0.7rem;
+}
+
+.soft-card p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.soft-card:hover {
+    transform: translateY(-0.4rem);
+
+    box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.15);
+
+    background-position: 100% 100%;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+   ================================================== */
+
+@media (max-width: 37.5rem) {
+
+    /* ===== INTRO ===== */
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .header-wrapper {
+        min-height: auto;
+        padding: 2rem 1.25rem 3rem;
+    }
+
+    .index-intro {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+
+    .index-intro h1 {
+        font-size: 5rem;
+        margin: 0;
+    }
+
+    .index-intro h3 {
+        margin-top: 0.75rem;
+        padding-top: 0;
+    }
+
+    .index-intro p {
+        width: 100%;
+        max-width: 100%;
+        margin: 1.5rem 0 0;
+        padding-top: 0;
+    }
+
+
+    /* ===== PROJECTEN ===== */
+
+    .three-projects {
+        min-height: auto;
+        padding: 2rem 1rem 4rem;
+        margin-top: 2rem;
+    }
+
+    .three-projects h2 {
+        margin: 0;
+    }
+
+    .projects-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        gap: 4rem;
+
+        margin-top: 3rem;
+        padding: 0;
+    }
+
+    .project-index {
+        width: 17rem;
+        max-width: 100%;
+    }
+
+    .project-photo-index {
+        width: 100%;
+        height: 18rem;
+
+        object-fit: cover;
+
+        border-radius: 2rem;
+    }
+
+    .project-index h5 {
+        top: -0.8rem;
+        right: -0.5rem;
+
+        padding: 0.7rem 1rem;
+    }
+
+
+    .project-button {
+        bottom: -1rem;
+        padding: 0.7rem 1.1rem;
+    }
+
+    .see-more {
+        margin-top: 5rem;
+        padding: 0.8rem 2.5rem;
+    }
+
+
+
+    /* ===== SKILLS ===== */
+
+    .skills {
+        padding: 3rem 1.5rem;
+    }
+
+    .skills h2 {
+        margin: 0 0 2rem;
+    }
+
+  .skills-filters {
+    gap: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 1rem 1rem 1.5rem;
+}
+
+    .skill-filter {
+        flex-shrink: 0;
+
+        padding: 0.7rem 1.2rem;
+    }
+
+
+    /* ===== HARD SKILLS ===== */
+
+    .hard-skills {
+        display: flex;
+
+        gap: 1rem;
+
+        overflow-x: auto;
+        overflow-y: visible;
+
+        padding-bottom: 1rem;
+    }
+
+    .skill-card {
+        flex: 0 0 18rem;
+
+        height: 7rem;
+    }
+
+
+    /* ===== SOFT SKILLS ===== */
+
+    .soft-title {
+        margin-top: 4rem;
+        margin-right: 0;
+
+        text-align: right;
+        padding-top: 2rem;
+    }
+
+    .soft-skills {
+        display: flex;
+
+        gap: 1rem;
+
+        overflow-x: auto;
+    }
+
+    .soft-card {
+        flex: 0 0 18rem;
+    }
+}
