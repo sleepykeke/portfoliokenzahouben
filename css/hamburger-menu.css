@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* ===== VARIABELEN ===== */
+
+:root {
+    --c-yellow: #ffc976;
+    --c-green: #afbe9d;
+    --c-orange: #e2895d;
+    --c-blue: #718eae;
+}
+
+h6 {
+    font-family: Righteous, sans-serif;
+    font-size: 3.75rem; /* 60px */
+}
+
+/* ========================================
+   HAMBURGER MENU
+======================================== */
+
+
+/* ===== HAMBURGER KNOP ===== */
+
+.hamburger-button {
+    position: fixed;
+
+    top: 2rem;
+    right: 2rem;
+
+    z-index: 100;
+
+    width: 4.5rem;
+    height: 4.5rem;
+
+    padding: 0.8rem;
+
+    border: 0.2rem solid var(--c-yellow);
+    border-radius: 0.25rem;
+
+    background-color: var(--c-orange);
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.45rem;
+}
+
+
+/* ===== DE DRIE LIJNTJES ===== */
+
+.hamburger-button span {
+    display: block;
+
+    width: 3rem;
+    height: 0.35rem;
+
+    background-color: var(--c-yellow);
+
+    transition: 0.3s ease;
+}
+
+
+/* ========================================
+   MENU OVERLAY
+======================================== */
+
+.menu-overlay {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    z-index: 110;
+
+    overflow: hidden;
+
+    /* Menu staat boven het scherm */
+    transform: translateY(-100%);
+
+    /* Komt van boven naar beneden */
+    transition: transform 0.5s ease;
+}
+
+
+/* ===== MENU OPEN ===== */
+
+.menu-overlay.open {
+    transform: translateY(0);
+}
+
+
+/* ========================================
+   NOISE ACHTERGROND
+======================================== */
+
+.menu-backgroundnoise {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 0;
+}
+
+
+/* ========================================
+   MENU INHOUD
+======================================== */
+
+.menu-content {
+    position: relative;
+
+    z-index: 2;
+
+    padding: 5rem 5rem;
+}
+
+
+/* ========================================
+   MENU ITEMS
+======================================== */
+
+.menu-content h6 {
+    margin: 0 0 1.8rem;
+
+    font-family: Righteous, sans-serif;
+
+    font-size: 4.5rem; /* 60px */
+
+    line-height: 1.75;
+}
+
+
+.menu-content h6 a {
+    color: white;
+
+    text-decoration: none;
+
+    transition: opacity 0.2s ease;
+}
+
+
+.menu-content h6 a:hover {
+    opacity: 0.7;
+}
+
+
+/* ========================================
+   CONTACT
+======================================== */
+
+.menu-contact {
+    margin-top: 2rem !important;
+}
+
+
+/* ========================================
+   TALEN
+======================================== */
+
+.menu-languages {
+    margin-top: 2rem;
+}
+
+
+.menu-languages h3 {
+    margin: 0;
+
+    color: white;
+
+    font-family: Righteous, sans-serif;
+
+    font-size: 1.5rem;
+}
+
+
+.menu-languages a {
+    color: white;
+
+    text-decoration: none;
+}
+
+
+.menu-languages span {
+    margin: 0 0.5rem;
+
+    color: white;
+}
+
+
+/* ========================================
+   SLUITKNOP
+======================================== */
+
+.menu-close {
+    position: absolute;
+
+    top: 1.5rem;
+    right: 2rem;
+
+    z-index: 3;
+
+    border: none;
+
+    background: none;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 5rem;
+    font-weight: 200;
+
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+
+    /* Menu blijft volledig scherm */
+    .menu-overlay {
+        width: 100%;
+        height: 100vh;
+    }
+
+
+    /* Hamburger */
+    .hamburger-button {
+        top: 1.25rem;
+        right: 1.25rem;
+
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+
+    .hamburger-button span {
+        width: 2.2rem;
+        height: 0.3rem;
+    }
+
+
+    /* Menu inhoud */
+    .menu-content {
+        padding: 5rem 2rem;
+    }
+
+
+    /* Menu tekst kleiner */
+    .menu-content h6 {
+        font-size: 2.5rem;
+    }
+
+
+    /* Talen */
+    .menu-languages {
+        margin-top: 2rem;
+    }
+
+
+    .menu-languages h3 {
+        font-size: 1.1rem;
+    }
+
+
+    /* Sluitknop */
+    .menu-close {
+        top: 0.5rem;
+        right: 1rem;
+
+        font-size: 4rem;
+    }
+}
+
+
+/* ========================================
+   KLEINE GSM
+======================================== */
+
+@media (max-width: 480px) {
+
+    .menu-content {
+        padding: 4.5rem 1.5rem;
+    }
+
+
+    .menu-content h6 {
+        font-size: 2rem;
+    }
+
+
+    .menu-languages h3 {
+        font-size: 1rem;
+    }
+
+
+    .menu-close {
+        font-size: 3.5rem;
+    }
+}

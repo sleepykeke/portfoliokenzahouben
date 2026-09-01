@@ -1,66 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/hamburger-menu.css">
 </head>
+
 <body class="index-body">
+
+  <!-- Hamburger menu -->
     <div class="hamburger-menu">
 
+        <!-- Hamburger knop -->
+        <button class="hamburger-button" aria-label="Menu openen">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+
+        <!-- Menu overlay -->
+        <nav class="menu-overlay">
+
+            <!-- Noise achtergrond -->
+            <img
+                src="./images/noise_background.png"
+                class="menu-backgroundnoise"
+                alt=""
+            >
+
+            <!-- Sluitknop -->
+            <button class="menu-close" aria-label="Menu sluiten">
+                ×
+            </button>
+
+
+            <!-- Navigatie -->
+            <div class="menu-content">
+
+                <h6><a href="#">Home</a></h6>
+                <h6><a href="#">Over mij</a></h6>
+                <h6><a href="#">Projecten</a></h6>
+                <h6><a href="#">Contact</a></h6>
+
+                <!-- Talen -->
+                <div class="menu-languages">
+                    <h3>
+                        <a href="#">NL</a>
+                        <span>|</span>
+                        <a href="#">FR</a>
+                        <span>|</span>
+                        <a href="#">ENG</a>
+                    </h3>
+                </div>
+
+            </div>
+
+        </nav>
+
     </div>
 
-    <div class="header-wrapper">
-        <h1>Kenza</h1>
-        <h1>Houben</h1>
-        <h3>Gedreven • Doorzetter • Denker</h3>
-        <div>
-            <img src="" class="kenzahouben-index">
-        </div>
-        <div>
+
+    <!-- Intro -->
+    <header class="header-wrapper">
+
+        <div class="index-intro">
+
+            <h1>Kenza</h1>
+            <h1 class="houben">Houben</h1>
+
+            <h3>Gedreven • Doorzetter • Denker</h3>
+
             <p>
-                Hoi! Ik ben Kenza, een gepassioneerde student Multimedia & Creatieve Technologie. 
-                Ik hou van 3D-modelling, design en het verkennen van nieuwe technologieën. 
-                Met creativiteit en technische vaardigheden werk ik aan projecten die me uitdagen 
+                Hoi! Ik ben Kenza, een gepassioneerde student Multimedia & Creatieve Technologie.
+                Ik hou van 3D-modelling, design en het verkennen van nieuwe technologieën.
+                Met creativiteit en technische vaardigheden werk ik aan projecten die me uitdagen
                 en mijn grenzen verleggen.
             </p>
-        </div>
-    </div>
 
-    <div class="index-wrapper">
-        <div class="three-projects">
-            <div class="background-index">
-                <img src="./images/noise_background.png" class="backgroundnoise-index">
-            </div>
-            <h2>Mijn projecten</h2>
-
-            <div class="projects-row">
-                <div class="project-index">
-                    <h5>3D & Animation</h5>
-                    <img src="./images/le_petit_prince_cover.jpg" class="project-photo-index">
-                    <h4>Le Petit Prince</h4>
-                </div>
-
-                <div class="project-index">
-                    <h5>UI/UX Design</h5>
-                    <img src="./images/surf_festival_cover.png" class="project-photo-index">
-                    <h4>Surf Festival</h4>
-                </div>
-
-                <div class="project-index">
-                    <h5>UI/UX Design</h5>
-                    <img src="./images/smart_home_cover.png" class="project-photo-index">
-                    <h4>Smart Home</h4>
-                </div>
-            </div>
         </div>
 
+        <img src="" class="kenzahouben-index" alt="">
 
-        <div class="skills">
+    </header>
+
+
+    <!-- Projecten -->
+   <!-- Projecten -->
+        <main class="index-wrapper">
+
+            <section class="three-projects">
+                <img
+                    src="./images/noise_background.png"
+                    class="backgroundnoise-index"
+                    alt=""
+                >
+                <h2>Mijn projecten</h2>
+
+                <div class="projects-row">
+                    <div class="project-index">
+                        <h5>3D &amp; Animation</h5>
+                        <img
+                            src="./images/le_petit_prince_cover.jpg"
+                            class="project-photo-index"
+                            alt="Le Petit Prince project"
+                        >
+                        <h4>Le Petit Prince</h4>
+                    </div>
+
+
+                    <div class="project-index">
+                        <h5>UI/UX Design</h5>
+                        <img
+                            src="./images/surf_festival_cover.png"
+                            class="project-photo-index"
+                            alt="Surf Festival project"
+                        >
+                        <h4>Surf Festival</h4>
+                    </div>
+
+
+                    <div class="project-index">
+                        <h5>UI/UX Design</h5>
+                        <img
+                            src="./images/smart_home_cover.png"
+                            class="project-photo-index"
+                            alt="Smart Home project"
+                        >
+                        <h4>Smart Home</h4>
+                    </div>
+                </div>
+
+
+                <div class="see-more">
+                    <h4>Zie meer</h4>
+                </div>
+            </section>
+
+
+            <!-- Skills -->
+            <section class="skills">
+                bt
+            </section>
+
+        </main>
+
+
+        <!-- Skills -->
+        <section class="skills">
             bt
-        </div>
-        
-    </div>
-    
+        </section>
+
+    </main>
+
 </body>
+<script src="js/hamburger-menu.js"></script>
+
 </html>
