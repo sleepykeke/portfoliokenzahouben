@@ -10,29 +10,548 @@ html {
     font-size: 16px;
 }
 
-
-/* ==================================================
-   VARIABELEN
-   ================================================== */
-
-:root {
-    --c-yellow: #ffc976;
-    --c-green: #afbe9d;
-    --c-orange: #e2895d;
-    --c-blue: #718eae;
-}
-
-/* ==================================================
-   ABOUT
-   ================================================== */
-
 .about-body {
     margin: 0;
+    padding: 0;
 }
+
+
+/* ==================================================
+   OVER MIJ
+   ================================================== */
+
+.about-intro {
+    width: 100%;
+    padding: 2rem 6rem 5rem;
+    box-sizing: border-box;
+}
+
+
+/* ==================================================
+   TITEL
+   ================================================== */
+
+.about-intro h2 {
+    margin: 0 0 1.5rem 2rem;
+
+    color: var(--c-green);
+
+    font-family: Righteous, sans-serif;
+    font-size: 3.125rem;
+}
+
+
+/* ==================================================
+   AFBEELDING + TEKST
+   ================================================== */
+
+.about-intro-content {
+    display: flex;
+    align-items: center;
+
+    gap: 4rem;
+}
+
+
+/* ==================================================
+   AFBEELDINGSGEBIED
+   ================================================== */
+
+.about-image-area {
+    position: relative;
+
+    flex: 0 0 22rem;
+
+    width: 22rem;
+    height: 20rem;
+}
+
+
+/* ==================================================
+   ACHTERSTE VORM
+   ================================================== */
+
+.about-image-back {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 16rem;
+    height: 3.2rem;
+
+    border-radius: 0.9rem;
+
+    background:
+        url("../images/noise_background.png")
+        center / cover no-repeat;
+}
+
+
+/* ==================================================
+   FOTO / PLACEHOLDER
+   ================================================== */
+
+.about-image {
+    position: absolute;
+
+    top: 0.6rem;
+    left: 3rem;
+
+    width: 17.5rem;
+    height: 17.5rem;
+
+    border-radius: 0.9rem;
+
+    background-color: #d9d9d9;
+
+    z-index: 2;
+}
+
+
+/* ==================================================
+   ONDERSTE VORM
+   ================================================== */
+
+.about-image-bottom {
+    position: absolute;
+
+    bottom: 0;
+    left: 6.5rem;
+
+    width: 16rem;
+    height: 3.2rem;
+
+    border-radius: 0.9rem;
+
+    background:
+        url("../images/noise_background.png")
+        center / cover no-repeat;
+}
+
+
+/* ==================================================
+   OVER MIJ TEKST
+   ================================================== */
+
+.about-text {
+    width: 22rem;
+
+    box-sizing: border-box;
+}
+
+.about-text p {
+    margin: 0 0 1.5rem;
+
+    font-family: Nunito, sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.4;
+
+    color: black;
+}
+
+
+/* ==================================================
+   MIJN REIS
+   ================================================== */
+
+.my-journey {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    padding: 2rem 0 4rem;
+
+    box-sizing: border-box;
+}
+
+
+/* ==================================================
+   ACHTERGROND
+   ================================================== */
+
+.journey-background {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 0;
+}
+
+
+/* ==================================================
+   JOURNEY CONTENT
+   ================================================== */
+
+.journey-content {
+    position: relative;
+
+    z-index: 1;
+
+    width: 70rem;
+    max-width: calc(100% - 4rem);
+
+    margin: 0 auto;
+}
+
+
+/* ==================================================
+   MIJN REIS TITEL
+   ================================================== */
+
+.journey-content > h2 {
+    margin: 0 0 3rem;
+
+    text-align: center;
+
+    color: white;
+
+    font-family: Righteous, sans-serif;
+    font-size: 2.5rem;
+
+    line-height: 1;
+}
+
+
+/* ==================================================
+   JOURNEY ITEM
+   ================================================== */
+
+.journey-item {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 5rem 5rem 1fr;
+
+    column-gap: 1.5rem;
+
+    min-height: 11rem;
+
+    margin-bottom: 2rem;
+}
+
+
+/* ==================================================
+   JAAR
+   ================================================== */
+
+.journey-year {
+    display: flex;
+
+    justify-content: flex-end;
+
+    padding-top: 0.6rem;
+}
+
+.journey-year span {
+    color: white;
+
+    font-family: Righteous, sans-serif;
+    font-size: 0.75rem;
+
+    white-space: nowrap;
+}
+
+
+/* ==================================================
+   STER
+   ================================================== */
+
+.journey-star {
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.journey-star img {
+    position: relative;
+
+    width: 3.5rem;
+    height: 3.5rem;
+
+    object-fit: contain;
+
+    z-index: 2;
+}
+
+
+/* ==================================================
+   LIJN TUSSEN DE STERREN
+   ================================================== */
+
+.journey-item:not(:last-child) .journey-star::after {
+    content: "";
+
+    position: absolute;
+
+    top: 3.5rem;
+    left: 50%;
+
+    width: 0.1rem;
+    height: calc(100% + 2rem);
+
+    background-color: white;
+
+    transform: translateX(-50%);
+
+    z-index: 1;
+}
+
+
+/* ==================================================
+   JOURNEY TEKST
+   ================================================== */
+
+.journey-text {
+    padding-top: 0.35rem;
+
+    color: white;
+}
+
+
+/* ==================================================
+   OPLEIDING
+   ================================================== */
+
+.journey-text h4 {
+    margin: 0;
+
+    color: white;
+
+    font-family: Righteous, sans-serif;
+    font-size: 0.9rem;
+
+    line-height: 1.2;
+}
+
+
+/* ==================================================
+   SCHOOL
+   ================================================== */
+
+.journey-school {
+    margin: 0.2rem 0 1.5rem;
+
+    color: white;
+
+    font-family: Nunito, sans-serif;
+    font-size: 0.75rem;
+
+    line-height: 1.2;
+}
+
+
+/* ==================================================
+   JOURNEY BESCHRIJVING
+   ================================================== */
+
+.journey-text > p:not(.journey-school) {
+    max-width: 42rem;
+
+    margin: 0 0 1.2rem;
+
+    color: white;
+
+    font-family: Nunito, sans-serif;
+    font-size: 0.7rem;
+
+    line-height: 1.4;
+}
+
 
 /* ==================================================
    RESPONSIVE
    ================================================== */
 
 @media (max-width: 37.5rem) {
+
+    /* ==============================
+       OVER MIJ
+       ============================== */
+
+    .about-intro {
+        padding: 1.5rem 1rem 3rem;
+    }
+
+
+    .about-intro h2 {
+        margin: 0 0 1rem;
+
+        text-align: center;
+
+        font-size: 2rem;
+    }
+
+
+    .about-intro-content {
+        flex-direction: column;
+
+        gap: 1rem;
+    }
+
+
+    /* ==============================
+       AFBEELDING
+       ============================== */
+
+    .about-image-area {
+        flex: none;
+
+        width: 18rem;
+        height: 16rem;
+    }
+
+
+    .about-image-back {
+        width: 8rem;
+        height: 2.5rem;
+
+        border-radius: 0.8rem;
+    }
+
+
+    .about-image {
+        top: 0.4rem;
+        left: 1.5rem;
+
+        width: 10rem;
+        height: 10rem;
+
+        border-radius: 0.7rem;
+    }
+
+
+    .about-image-bottom {
+        bottom: 0;
+        left: 3.5rem;
+
+        width: 9rem;
+        height: 2.5rem;
+
+        border-radius: 0.8rem;
+    }
+
+
+    /* ==============================
+       TEKST
+       ============================== */
+
+    .about-text {
+        width: 18rem;
+    }
+
+
+    .about-text p {
+        margin-bottom: 1rem;
+
+        font-size: 0.65rem;
+        line-height: 1.35;
+    }
+
+
+    /* ==============================
+       MIJN REIS
+       ============================== */
+
+    .my-journey {
+        padding: 2rem 1rem 3rem;
+    }
+
+
+    .journey-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .journey-content > h2 {
+        margin-bottom: 2.5rem;
+
+        font-size: 2rem;
+    }
+
+
+    /* ==============================
+       JOURNEY ITEM
+       ============================== */
+
+    .journey-item {
+        grid-template-columns: 3rem 3rem 1fr;
+
+        column-gap: 0.75rem;
+
+        min-height: 10rem;
+
+        margin-bottom: 1.5rem;
+    }
+
+
+    /* ==============================
+       JAAR
+       ============================== */
+
+    .journey-year {
+        padding-top: 0.5rem;
+    }
+
+
+    .journey-year span {
+        font-size: 0.65rem;
+    }
+
+
+    /* ==============================
+       STER
+       ============================== */
+
+    .journey-star img {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+
+    .journey-item:not(:last-child) .journey-star::after {
+        top: 2.8rem;
+
+        height: calc(100% + 1.5rem);
+    }
+
+
+    /* ==============================
+       JOURNEY TEKST
+       ============================== */
+
+    .journey-text {
+        padding-top: 0.25rem;
+    }
+
+
+    .journey-text h4 {
+        font-size: 0.75rem;
+    }
+
+
+    .journey-school {
+        margin-bottom: 1rem;
+
+        font-size: 0.65rem;
+    }
+
+
+    .journey-text > p:not(.journey-school) {
+        font-size: 0.58rem;
+
+        line-height: 1.35;
+    }
 }
