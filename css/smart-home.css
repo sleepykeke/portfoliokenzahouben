@@ -1,8 +1,498 @@
-.smart-home-body{
-    margin:0;
+/* ==================================================
+   BASIS
+================================================== */
+
+.smart-home-body {
+    margin: 0;
+    padding: 0;
+
+    background-color: white;
 }
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.project-header {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 4rem;
+
+    background-color: white;
+}
+
+
+/* ==================================================
+   TITEL
+================================================== */
+
+.project-header h2 {
+    color: var(--c-green);
+}
+
+
+/* ==================================================
+   TERUGKNOP
+================================================== */
+
+.project-back {
+    position: absolute;
+
+    left: 3rem;
+
+    width: 2rem;
+    height: 2rem;
+
+    padding: 0;
+
+    border: none;
+    background: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: transform 0.25s ease;
+}
+
+
+.project-back img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+.project-back:hover {
+    transform: translateX(-0.2rem);
+}
+
+
+/* ==================================================
+   BOVENSTE AFBEELDING
+================================================== */
+
+.smart-home-hero {
+    position: relative;
+
+    width: 100%;
+    max-width: 45rem;
+
+    margin: 1rem auto 4rem;
+
+    padding: 0 2rem;
+
+    box-sizing: border-box;
+}
+
+
+.smart-home-hero > img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+}
+
+
+/* ==================================================
+   VIDEO + FIGMA
+================================================== */
+
+.project-video {
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 1rem 0 2rem;
+
+    box-sizing: border-box;
+
+    background-color: white;
+}
+
+
+.project-video iframe {
+    display: block;
+
+    width: 42rem;
+    height: 25rem;
+
+    border: none;
+}
+
+
+/* ==================================================
+   FIGMA KNOP
+================================================== */
+
+.smart-home-figma {
+    position: absolute;
+
+    left: 50%;
+    bottom: 2rem;
+
+    z-index: 3;
+
+    transform: translate(-50%, 50%);
+
+    display: block;
+
+    padding: 0.85rem 1.5rem;
+
+    border: none;
+    border-radius: 2rem;
+
+    background-color: var(--c-yellow);
+
+    color: white;
+
+    font-family: Righteous, sans-serif;
+    letter-spacing: 0.02rem;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.smart-home-figma:hover {
+    transform: translate(-50%, 45%) scale(1.01);
+
+    box-shadow:
+        0 0.6rem 1.2rem rgba(0, 0, 0, 0.12);
+}
+
+
+/* ==================================================
+   ALGEMENE PROJECT BLOKKEN
+================================================== */
+
+.project-block {
+    width: 100%;
+
+    max-width: 70rem;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+}
+
+
+/* ==================================================
+   HEADING + STER
+================================================== */
+
+.project-heading {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+
+    min-height: 3rem;
+}
+
+
+.project-heading img {
+    position: absolute;
+
+    left: -1.8rem;
+    top: 50%;
+
+    width: 4rem;
+    height: 4rem;
+
+    object-fit: contain;
+
+    transform: translateY(-50%);
+
+    z-index: 0;
+}
+
+
+.project-heading h4 {
+    position: relative;
+
+    margin: 0;
+
+    z-index: 2;
+}
+
+
+/* ==================================================
+   TEKST
+================================================== */
+
+.project-text {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.project-text p {
+    margin: 0 0 1.2rem;
+
+    line-height: 1.5;
+}
+
+
+/* ==================================================
+   OPDRACHT
+================================================== */
+
+.project-block-text {
+    padding: 2rem 3rem;
+}
+
+
+.project-block-text .project-text {
+    margin-top: 1rem;
+}
+
+
+/* ==================================================
+   ONDERZOEK
+================================================== */
+
+.project-block-research {
+    display: grid;
+
+    grid-template-columns: 17rem minmax(0, 1fr);
+
+    gap: 2rem;
+
+    align-items: start;
+
+    padding: 2.5rem 3rem;
+}
+
+
+.project-text-research {
+    padding-top: 0.2rem;
+}
+
+
+.project-text-research .project-heading {
+    margin-bottom: 1rem;
+}
+
+
+/* ==================================================
+   AFBEELDINGEN
+================================================== */
+
+.project-image {
+    width: 100%;
+}
+
+
+.project-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+
+    border-radius: 1rem;
+}
+
+
+/* ==================================================
+   PROCES
+================================================== */
+
+.process-section {
+    width: 100%;
+
+    max-width: 68rem;
+
+    margin: 0 auto;
+
+    padding: 2rem;
+
+    box-sizing: border-box;
+}
+
+
+/* ==================================================
+   EINDRESULTAAT
+================================================== */
+
+.project-block-final {
+    padding-top: 2rem;
+
+    padding-bottom: 4rem;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
 
 @media (max-width: 37.5rem) {
 
+    /* ==============================
+       HEADER
+    ============================== */
+
+    .project-header {
+        min-height: 3.5rem;
+    }
+
+
+    .project-back {
+        left: 1rem;
+
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+
+    /* ==============================
+       HERO
+    ============================== */
+
+    .smart-home-hero {
+        padding: 0 1rem;
+
+        margin:
+            0.5rem auto
+            3rem;
+    }
+
+
+    /* ==============================
+       VIDEO
+    ============================== */
+
+    .project-video {
+        padding:
+            1rem
+            1rem
+            2rem;
+    }
+
+
+    .project-video iframe {
+        width: 100%;
+
+        height: 13rem;
+    }
+
+
+    /* ==============================
+       FIGMA KNOP
+    ============================== */
+
+    .smart-home-figma {
+        left: 50%;
+        bottom: 2rem;
+
+        padding: 0.7rem 1.2rem;
+
+        font-family: Righteous, sans-serif;
+
+        transform: translate(-50%, 50%);
+    }
+
+
+    .smart-home-figma:hover {
+        transform: translate(-50%, 45%) scale(1.01);
+    }
+
+
+    /* ==============================
+       BLOKKEN
+    ============================== */
+
+    .project-block {
+        max-width: 100%;
+    }
+
+
+    .project-block-text {
+        padding: 1.5rem;
+    }
+
+
+    /* ==============================
+       HEADING
+    ============================== */
+
+    .project-heading {
+        min-height: 2.5rem;
+    }
+
+
+    .project-heading img {
+        left: -1.2rem;
+
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+
+    /* ==============================
+       ONDERZOEK
+    ============================== */
+
+    .project-block-research {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 1.5rem;
+
+        padding: 1.5rem;
+    }
+
+
+    .project-text-research {
+        order: 1;
+
+        width: 100%;
+    }
+
+
+    .project-block-research .project-image {
+        order: 2;
+
+        width: 100%;
+    }
+
+
+    /* ==============================
+       EINDRESULTAAT
+    ============================== */
+
+    .project-block-final {
+        padding-top: 1.5rem;
+
+        padding-bottom: 3rem;
+    }
 
 }
