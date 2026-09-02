@@ -1,9 +1,18 @@
+const supportedLanguages = ["nl", "fr", "en"];
+
+const savedLanguage = localStorage.getItem("siteLanguage");
+
+const currentLanguage = supportedLanguages.includes(savedLanguage)
+    ? savedLanguage
+    : "nl";
+
+
 const projects = [
 
     {
         name: "Le Petit Prince",
         category: "3d",
-        categoryName: "3D & Animatie",
+        categoryKey: "animation",
         image: "./images/le_petit_prince_cover.jpg",
         link: "./projects/le-petit-prince.html"
     },
@@ -11,7 +20,7 @@ const projects = [
     {
         name: "Smart Home",
         category: "uiux",
-        categoryName: "UI/UX Design",
+        categoryKey: "uiux",
         image: "./images/smart_home_cover.png",
         link: "./projects/smart-home.html"
     },
@@ -19,7 +28,7 @@ const projects = [
     {
         name: "Beau's House",
         category: "3d",
-        categoryName: "3D & Animatie",
+        categoryKey: "animation",
         image: "./images/image_horizontal_1.jpg",
         link: "./projects/beau-house.html"
     },
@@ -27,7 +36,7 @@ const projects = [
     {
         name: "Surf Festival",
         category: "uiux",
-        categoryName: "UI/UX Design",
+        categoryKey: "uiux",
         image: "./images/surf_festival_cover.png",
         link: "./projects/surf-festival.html"
     },
@@ -35,7 +44,7 @@ const projects = [
     {
         name: "Whispers of the Duat",
         category: "3d",
-        categoryName: "3D & Animatie",
+        categoryKey: "animation",
         image: "./images/whispers_of_the_duat_cover.png",
         link: "./projects/whispers-of-the-duat.html"
     },
@@ -43,7 +52,7 @@ const projects = [
     {
         name: "Cozy Stride",
         category: "uiux",
-        categoryName: "UI/UX Design",
+        categoryKey: "uiux",
         image: "./images/basislogo_withoutbg.jpg",
         link: "./projects/cozy-stride.html"
     },
@@ -51,7 +60,7 @@ const projects = [
     {
         name: "My Uno Stats",
         category: "uiux",
-        categoryName: "UI/UX Design",
+        categoryKey: "uiux",
         image: "./images/my_uno_stats.jpg",
         link: "./projects/my-uno-stats.html"
     },
@@ -59,7 +68,7 @@ const projects = [
     {
         name: "Me and the Devil",
         category: "uiux",
-        categoryName: "UI/UX Design",
+        categoryKey: "uiux",
         image: "./images/me_and_the_devil.jpg",
         link: "./projects/me-and-the-devil.html"
     }
@@ -71,11 +80,76 @@ const projectsGrid = document.querySelector("#projects-grid");
 const filterButtons = document.querySelectorAll(".project-filter");
 
 
+let translations = null;
+
+
+/* ==================================================
+   VERTALINGEN LADEN
+================================================== */
+
+async function loadProjectTranslations() {
+
+    try {
+
+        const response = await fetch("languages.json");
+
+        if (!response.ok) {
+            throw new Error("languages.json kon niet geladen worden.");
+        }
+
+        translations = await response.json();
+
+        createProjects("all");
+
+    } catch (error) {
+
+        console.error(
+            "Vertalingen voor projecten konden niet geladen worden:",
+            error
+        );
+
+        createProjects("all");
+
+    }
+
+}
+
+
+/* ==================================================
+   CATEGORIE VERTALEN
+================================================== */
+
+function getCategoryName(project) {
+
+    if (
+        translations &&
+        translations[currentLanguage] &&
+        translations[currentLanguage].projectsPage
+    ) {
+
+        const categoryTranslations =
+            translations[currentLanguage].projectsPage;
+
+        return categoryTranslations[project.categoryKey] || "";
+
+    }
+
+
+    return "";
+
+}
+
+
 /* ==================================================
    PROJECTEN MAKEN
 ================================================== */
 
 function createProjects(category) {
+
+    if (!projectsGrid) {
+        return;
+    }
+
 
     projectsGrid.innerHTML = "";
 
@@ -105,6 +179,8 @@ function createProjects(category) {
         projectBackground.classList.add("project-card-background");
 
 
+        /* Afbeelding */
+
         const projectImage = document.createElement("img");
 
         projectImage.classList.add("project-card-image");
@@ -119,7 +195,7 @@ function createProjects(category) {
 
         projectCategory.classList.add("project-card-category");
 
-        projectCategory.textContent = project.categoryName;
+        projectCategory.textContent = getCategoryName(project);
 
 
         /* Naam */
@@ -162,7 +238,9 @@ filterButtons.forEach(function (button) {
 
 
         filterButtons.forEach(function (button) {
+
             button.classList.remove("active");
+
         });
 
 
@@ -180,4 +258,4 @@ filterButtons.forEach(function (button) {
    START
 ================================================== */
 
-createProjects("all");
+loadProjectTranslations();
