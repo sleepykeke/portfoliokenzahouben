@@ -109,9 +109,15 @@
             </h4>
 
 
-            <!-- Formulier -->
+            <!-- ==================================================
+                 FORMULIER
+                 ================================================== -->
 
-            <form class="contact-form">
+            <form
+                class="contact-form"
+                action="https://formspree.io/f/mrpgqlwo"
+                method="POST"
+            >
 
 
                 <!-- Voornaam + Naam -->
@@ -122,12 +128,14 @@
                         type="text"
                         name="voornaam"
                         placeholder="Voornaam"
+                        required
                     >
 
                     <input
                         type="text"
                         name="naam"
                         placeholder="Naam"
+                        required
                     >
 
                 </div>
@@ -140,6 +148,7 @@
                     name="email"
                     class="contact-input-full"
                     placeholder="E-mailadres"
+                    required
                 >
 
 
@@ -149,6 +158,7 @@
                     name="boodschap"
                     class="contact-message"
                     placeholder="Boodschap"
+                    required
                 ></textarea>
 
 
