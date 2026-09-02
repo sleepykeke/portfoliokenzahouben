@@ -416,6 +416,9 @@ p {
    ================================================== */
 
 @media (max-width: 37.5rem) {
+      h2 {
+        font-size: 2rem;
+    }
     /* ===== HAMBURGER MENU ===== */
 
      /* Menu blijft volledig scherm */
