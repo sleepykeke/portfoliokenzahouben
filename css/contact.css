@@ -133,7 +133,9 @@
 }
 
 
-/* Placeholder */
+/* ==================================================
+   PLACEHOLDER
+================================================== */
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
@@ -161,6 +163,9 @@
     color: white;
 
     cursor: pointer;
+
+    font-family: Righteous, sans-serif;
+    font-size: 1rem;
 
     transition:
         transform 0.25s ease,
@@ -208,7 +213,9 @@
 
     .contact-form {
         padding: 1.25rem;
+
         gap: 1.25rem;
+
         border-radius: 1.1rem;
     }
 
@@ -260,6 +267,9 @@
 
     .contact-submit {
         padding: 0.85rem 2.2rem;
+
+        font-family: Righteous, sans-serif;
+        font-size: 1rem;
     }
 
 }
