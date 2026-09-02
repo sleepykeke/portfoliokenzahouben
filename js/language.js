@@ -1,5 +1,10 @@
 const supportedLanguages = ["nl", "fr", "en"];
 
+
+/* ==================================================
+   HUIDIGE TAAL
+================================================== */
+
 const savedLanguage = localStorage.getItem("siteLanguage");
 
 const currentLanguage = supportedLanguages.includes(savedLanguage)
@@ -7,18 +12,28 @@ const currentLanguage = supportedLanguages.includes(savedLanguage)
     : "nl";
 
 
+
 /* ==================================================
-   PAGINA NAAM BEPALEN
+   PAGINA BEPALEN
 ================================================== */
 
 function getPageName() {
+
+    const pageElement = document.querySelector("[data-page]");
+
+    if (pageElement) {
+        return pageElement.dataset.page;
+    }
+
 
     const fileName = window.location.pathname
         .split("/")
         .pop()
         .replace(".html", "");
 
+
     const pages = {
+
         index: "home",
         about: "about",
         contact: "contact",
@@ -32,19 +47,24 @@ function getPageName() {
         "smart-home": "smartHome",
         "surf-festival": "surfFestival",
         "whispers-of-the-duat": "whispers"
+
     };
+
 
     return pages[fileName] || null;
 }
 
 
+
 /* ==================================================
-   TRANSLATIONS LADEN
+   JSON LADEN
 ================================================== */
 
 async function loadTranslations() {
 
-    const isProjectPage = window.location.pathname.includes("/projects/");
+    const isProjectPage =
+        window.location.pathname.includes("/projects/");
+
 
     const jsonPath = isProjectPage
         ? "../languages.json"
@@ -55,13 +75,24 @@ async function loadTranslations() {
 
         const response = await fetch(jsonPath);
 
+
         if (!response.ok) {
-            throw new Error("languages.json kon niet geladen worden.");
+
+            throw new Error(
+                `languages.json kon niet geladen worden. Status: ${response.status}`
+            );
+
         }
+
 
         const translations = await response.json();
 
-        applyTranslations(translations, currentLanguage);
+
+        applyTranslations(
+            translations,
+            currentLanguage
+        );
+
 
     } catch (error) {
 
@@ -71,14 +102,21 @@ async function loadTranslations() {
         );
 
     }
+
 }
 
 
+
 /* ==================================================
-   WAARDE UIT JSON HALEN
+   WAARDE UIT OBJECT HALEN
 ================================================== */
 
 function getValue(object, path) {
+
+    if (!object || !path) {
+        return undefined;
+    }
+
 
     return path
         .split(".")
@@ -86,7 +124,9 @@ function getValue(object, path) {
             (value, key) => value?.[key],
             object
         );
+
 }
+
 
 
 /* ==================================================
@@ -97,16 +137,25 @@ function applyTranslations(translations, language) {
 
     const languageData = translations[language];
 
+
     if (!languageData) {
+
+        console.error(
+            `Taal "${language}" bestaat niet in languages.json.`
+        );
+
         return;
+
     }
 
 
     const pageName = getPageName();
 
+
     const pageData = pageName
         ? languageData[pageName]
         : null;
+
 
 
     /* ==================================================
@@ -118,56 +167,60 @@ function applyTranslations(translations, language) {
 
 
     /* ==================================================
-       NORMALE TEKST
-       Alleen elementen zonder data-i18n-attr
+       NORMALE TEKSTVERTALINGEN
+       
+       BELANGRIJK:
+       Elementen die data-i18n-attr hebben,
+       worden hier NIET aangepast.
+       
+       Zo blijven bijvoorbeeld:
+       - hamburger spans
+       - pijltje afbeeldingen
+       intact.
     ================================================== */
 
     document
-        .querySelectorAll("[data-i18n]:not([data-i18n-attr])")
+        .querySelectorAll("[data-i18n]")
         .forEach((element) => {
 
-            const key = element.dataset.i18n;
+            /*
+               Alleen echte tekst-elementen vertalen.
 
-            let value = getValue(languageData, key);
+               Elementen met data-i18n-attr worden
+               hieronder alleen via hun attribuut vertaald.
+            */
 
-            if (value === undefined && pageData) {
-                value = getValue(pageData, key);
-            }
-
-            if (value !== undefined) {
-                element.textContent = value;
-            }
-
-        });
-
-
-
-    /* ==================================================
-       ATTRIBUTEN
-       Bijvoorbeeld:
-       data-i18n="common.menuOpen"
-       data-i18n-attr="aria-label"
-    ================================================== */
-
-    document
-        .querySelectorAll("[data-i18n-attr]")
-        .forEach((element) => {
-
-            const attribute = element.dataset.i18nAttr;
-            const key = element.dataset.i18n;
-
-            if (!attribute || !key) {
+            if (element.dataset.i18nAttr) {
                 return;
             }
 
-            let value = getValue(languageData, key);
 
-            if (value === undefined && pageData) {
-                value = getValue(pageData, key);
+            const key = element.dataset.i18n;
+
+
+            let value = getValue(
+                languageData,
+                key
+            );
+
+
+            if (
+                value === undefined &&
+                pageData
+            ) {
+
+                value = getValue(
+                    pageData,
+                    key
+                );
+
             }
 
+
             if (value !== undefined) {
-                element.setAttribute(attribute, value);
+
+                element.textContent = value;
+
             }
 
         });
@@ -176,25 +229,39 @@ function applyTranslations(translations, language) {
 
     /* ==================================================
        PLACEHOLDERS
-       
-       Ondersteunt:
-       data-i18n-placeholder="common.firstName"
     ================================================== */
 
     document
         .querySelectorAll("[data-i18n-placeholder]")
         .forEach((element) => {
 
-            const key = element.dataset.i18nPlaceholder;
+            const key =
+                element.dataset.i18nPlaceholder;
 
-            let value = getValue(languageData, key);
 
-            if (value === undefined && pageData) {
-                value = getValue(pageData, key);
+            let value = getValue(
+                languageData,
+                key
+            );
+
+
+            if (
+                value === undefined &&
+                pageData
+            ) {
+
+                value = getValue(
+                    pageData,
+                    key
+                );
+
             }
 
+
             if (value !== undefined) {
+
                 element.placeholder = value;
+
             }
 
         });
@@ -202,31 +269,51 @@ function applyTranslations(translations, language) {
 
 
     /* ==================================================
-       ALTERNATIEVE MANIER VOOR PLACEHOLDERS
-
-       Dit ondersteunt ook:
-       data-i18n="common.firstName"
-       data-i18n-attr="placeholder"
-
-       Hierdoor hoef je geen dubbele systemen te gebruiken.
+       ATTRIBUTEN
+       
+       Bijvoorbeeld:
+       aria-label="Open menu"
+       aria-label="Go back to the previous page"
     ================================================== */
 
     document
-        .querySelectorAll(
-            '[data-i18n-attr="placeholder"]'
-        )
+        .querySelectorAll("[data-i18n-attr]")
         .forEach((element) => {
 
-            const key = element.dataset.i18n;
+            const attribute =
+                element.dataset.i18nAttr;
 
-            let value = getValue(languageData, key);
 
-            if (value === undefined && pageData) {
-                value = getValue(pageData, key);
+            const key =
+                element.dataset.i18n;
+
+
+            let value = getValue(
+                languageData,
+                key
+            );
+
+
+            if (
+                value === undefined &&
+                pageData
+            ) {
+
+                value = getValue(
+                    pageData,
+                    key
+                );
+
             }
 
+
             if (value !== undefined) {
-                element.setAttribute("placeholder", value);
+
+                element.setAttribute(
+                    attribute,
+                    value
+                );
+
             }
 
         });
@@ -234,23 +321,45 @@ function applyTranslations(translations, language) {
 
 
     /* ==================================================
-       PAGINA TITLE
+       PAGE TITLE
     ================================================== */
 
-    const titleElement = document.querySelector("title");
+    const titleElement =
+        document.querySelector("title");
 
-    if (titleElement?.dataset.i18n) {
 
-        const key = titleElement.dataset.i18n;
+    if (
+        titleElement &&
+        titleElement.dataset.i18n
+    ) {
 
-        let value = getValue(languageData, key);
+        const key =
+            titleElement.dataset.i18n;
 
-        if (value === undefined && pageData) {
-            value = getValue(pageData, key);
+
+        let value = getValue(
+            languageData,
+            key
+        );
+
+
+        if (
+            value === undefined &&
+            pageData
+        ) {
+
+            value = getValue(
+                pageData,
+                key
+            );
+
         }
 
+
         if (value !== undefined) {
+
             titleElement.textContent = value;
+
         }
 
     }
@@ -258,17 +367,19 @@ function applyTranslations(translations, language) {
 
 
     /* ==================================================
-       TAALKNOPPEN ACTIEF MAKEN
+       TAALKNOPPEN
     ================================================== */
 
-    document.querySelectorAll("[data-lang]").forEach((button) => {
+    document
+        .querySelectorAll("[data-lang]")
+        .forEach((button) => {
 
-        button.classList.toggle(
-            "active",
-            button.dataset.lang === language
-        );
+            button.classList.toggle(
+                "active",
+                button.dataset.lang === language
+            );
 
-    });
+        });
 
 
 
@@ -284,50 +395,66 @@ function applyTranslations(translations, language) {
 }
 
 
+
 /* ==================================================
    TAAL VERANDEREN
 ================================================== */
 
 function changeLanguage(language) {
 
-    if (!supportedLanguages.includes(language)) {
+    if (
+        !supportedLanguages.includes(language)
+    ) {
         return;
     }
+
 
     localStorage.setItem(
         "siteLanguage",
         language
     );
 
-    location.reload();
+
+    window.location.reload();
 
 }
+
 
 
 /* ==================================================
    TAALKNOPPEN
 ================================================== */
 
-document.addEventListener("click", (event) => {
+document.addEventListener(
+    "click",
+    (event) => {
 
-    const languageButton =
-        event.target.closest("[data-lang]");
+        const languageButton =
+            event.target.closest("[data-lang]");
 
-    if (!languageButton) {
-        return;
+
+        if (!languageButton) {
+            return;
+        }
+
+
+        event.preventDefault();
+
+
+        changeLanguage(
+            languageButton.dataset.lang
+        );
+
     }
+);
 
-    event.preventDefault();
-
-    changeLanguage(
-        languageButton.dataset.lang
-    );
-
-});
 
 
 /* ==================================================
    START
 ================================================== */
 
-loadTranslations();
+document.addEventListener(
+    "DOMContentLoaded",
+    loadTranslations
+);
