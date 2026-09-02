@@ -5,25 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact</title>
+    <title data-i18n="contact.title">Contact</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
 </head>
 
 
-<body class="contact-body">
+<body class="contact-body" data-page="contact">
 
 
     <!-- ==================================================
          HAMBURGER MENU
-         ================================================== -->
+    ================================================== -->
 
     <div class="hamburger-menu">
 
         <button
             class="hamburger-button"
             aria-label="Menu openen"
+            type="button"
+            data-i18n="common.menuOpen"
+            data-i18n-attr="aria-label"
         >
             <span></span>
             <span></span>
@@ -43,6 +46,9 @@
             <button
                 class="menu-close"
                 aria-label="Menu sluiten"
+                type="button"
+                data-i18n="common.menuClose"
+                data-i18n-attr="aria-label"
             >
                 ×
             </button>
@@ -51,30 +57,60 @@
             <div class="menu-content">
 
                 <h6>
-                    <a href="index.html">Home</a>
+                    <a
+                        href="index.html"
+                        data-i18n="common.home"
+                    ></a>
                 </h6>
 
                 <h6>
-                    <a href="about.html">Over mij</a>
+                    <a
+                        href="about.html"
+                        data-i18n="common.about"
+                    ></a>
                 </h6>
 
                 <h6>
-                    <a href="projects.html">Projecten</a>
+                    <a
+                        href="projects.html"
+                        data-i18n="common.projects"
+                    ></a>
                 </h6>
 
                 <h6>
-                    <a href="contact.html">Contact</a>
+                    <a
+                        href="contact.html"
+                        data-i18n="common.contact"
+                    ></a>
                 </h6>
 
 
                 <div class="menu-languages">
 
                     <h3>
-                        <a href="#">NL</a>
+
+                        <a
+                            href="#"
+                            data-lang="nl"
+                            data-i18n="common.nl"
+                        ></a>
+
                         <span>|</span>
-                        <a href="#">FR</a>
+
+                        <a
+                            href="#"
+                            data-lang="fr"
+                            data-i18n="common.fr"
+                        ></a>
+
                         <span>|</span>
-                        <a href="#">ENG</a>
+
+                        <a
+                            href="#"
+                            data-lang="en"
+                            data-i18n="common.eng"
+                        ></a>
+
                     </h3>
 
                 </div>
@@ -89,29 +125,45 @@
 
     <!-- ==================================================
          CONTACT
-         ================================================== -->
+    ================================================== -->
 
     <main class="contact-wrapper">
 
         <section class="contact-section">
 
 
-            <!-- Titel -->
+            <!-- ==================================================
+                 TITEL
+            ================================================== -->
 
-            <h2>Contacteer mij</h2>
+            <h2 data-i18n="contact.title">
+                Contacteer mij
+            </h2>
 
 
-            <!-- Ondertitel -->
+            <!-- ==================================================
+                 ONDERTITEL
+            ================================================== -->
 
             <h4>
-                Heb je vragen of een opmerking?<br>
-                Laat het me weten!
+
+                <span data-i18n="contact.subtitle1">
+                    Heb je vragen of een opmerking?
+                </span>
+
+                <br>
+
+                <span data-i18n="contact.subtitle2">
+                    Laat het me weten!
+                </span>
+
             </h4>
+
 
 
             <!-- ==================================================
                  FORMULIER
-                 ================================================== -->
+            ================================================== -->
 
             <form
                 class="contact-form"
@@ -120,7 +172,9 @@
             >
 
 
-                <!-- Voornaam + Naam -->
+                <!-- ==================================================
+                     VOORNAAM + NAAM
+                ================================================== -->
 
                 <div class="contact-form-row">
 
@@ -128,45 +182,67 @@
                         type="text"
                         name="voornaam"
                         placeholder="Voornaam"
+                        data-i18n="common.firstName"
+                        data-i18n-attr="placeholder"
+                        autocomplete="given-name"
                         required
                     >
+
 
                     <input
                         type="text"
                         name="naam"
                         placeholder="Naam"
+                        data-i18n="common.lastName"
+                        data-i18n-attr="placeholder"
+                        autocomplete="family-name"
                         required
                     >
 
                 </div>
 
 
-                <!-- E-mailadres -->
+
+                <!-- ==================================================
+                     E-MAIL
+                ================================================== -->
 
                 <input
                     type="email"
                     name="email"
                     class="contact-input-full"
                     placeholder="E-mailadres"
+                    data-i18n="common.email"
+                    data-i18n-attr="placeholder"
+                    autocomplete="email"
                     required
                 >
 
 
-                <!-- Boodschap -->
+
+                <!-- ==================================================
+                     BOODSCHAP
+                ================================================== -->
 
                 <textarea
                     name="boodschap"
                     class="contact-message"
                     placeholder="Boodschap"
+                    data-i18n="common.message"
+                    data-i18n-attr="placeholder"
                     required
                 ></textarea>
 
 
-                <!-- Verzenden -->
+
+                <!-- ==================================================
+                     VERZENDEN
+                ================================================== -->
 
                 <button
                     type="submit"
                     class="contact-submit"
+                    data-i18n="common.send"
                 >
                     Verzenden
                 </button>
@@ -179,7 +255,7 @@
 
         <!-- ==================================================
              FOOTER
-             ================================================== -->
+        ================================================== -->
 
         <footer class="footer">
 
@@ -187,36 +263,52 @@
 
                 <nav class="footer-nav">
 
-                    <a href="index.html">
-                        Home
-                    </a>
+                    <a
+                        href="index.html"
+                        data-i18n="common.home"
+                    ></a>
 
-                    <a href="about.html">
-                        Over mij
-                    </a>
+                    <a
+                        href="about.html"
+                        data-i18n="common.about"
+                    ></a>
 
-                    <a href="projects.html">
-                        Projecten
-                    </a>
+                    <a
+                        href="projects.html"
+                        data-i18n="common.projects"
+                    ></a>
 
-                    <a href="contact.html">
-                        Contact
-                    </a>
+                    <a
+                        href="contact.html"
+                        data-i18n="common.contact"
+                    ></a>
 
                 </nav>
 
 
                 <div class="footer-languages">
 
-                    <a href="#">NL</a>
+                    <a
+                        href="#"
+                        data-lang="nl"
+                        data-i18n="common.nl"
+                    ></a>
 
                     <span>|</span>
 
-                    <a href="#">FR</a>
+                    <a
+                        href="#"
+                        data-lang="fr"
+                        data-i18n="common.fr"
+                    ></a>
 
                     <span>|</span>
 
-                    <a href="#">ENG</a>
+                    <a
+                        href="#"
+                        data-lang="en"
+                        data-i18n="common.eng"
+                    ></a>
 
                 </div>
 
@@ -224,9 +316,11 @@
                 <div class="footer-socials">
 
                     <a
-                        href="#"
+                        href="https://www.linkedin.com/in/kenza-houben-a3b9473aa/"
                         class="footer-social"
                         aria-label="LinkedIn"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                         <img
                             src="./images/linkedin.svg"
@@ -236,9 +330,11 @@
 
 
                     <a
-                        href="#"
+                        href="https://www.artstation.com/kenzahouben"
                         class="footer-social"
                         aria-label="ArtStation"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                         <img
                             src="./images/artstation.svg"
@@ -253,7 +349,7 @@
 
             <div class="footer-bottom">
 
-                <p>
+                <p data-i18n="common.copyright">
                     © 2026 Kenza. Alle rechten voorbehouden
                 </p>
 
@@ -264,7 +360,13 @@
     </main>
 
 
+
+    <!-- ==================================================
+         JAVASCRIPT
+    ================================================== -->
+
     <script src="js/hamburger-menu.js"></script>
+    <script src="js/language.js"></script>
 
 </body>
 

@@ -1,0 +1,613 @@
+{
+  "nl": {
+    "common": {
+      "home": "Home",
+      "about": "Over mij",
+      "projects": "Projecten",
+      "contact": "Contact",
+      "nl": "NL",
+      "fr": "FR",
+      "eng": "ENG",
+      "menuOpen": "Menu openen",
+      "menuClose": "Menu sluiten",
+      "back": "Ga terug naar de vorige pagina",
+      "linkedin": "LinkedIn",
+      "artstation": "ArtStation",
+      "copyright": "© 2026 Kenza. Alle rechten voorbehouden",
+      "seeMore": "Zie meer",
+      "figma": "Figma",
+      "send": "Verzenden",
+      "firstName": "Voornaam",
+      "lastName": "Naam",
+      "email": "E-mailadres",
+      "message": "Boodschap"
+    },
+
+    "home": {
+      "tagline": "Gedreven • Doorzetter • Denker",
+      "intro": "Hoi! Ik ben Kenza, een gepassioneerde student Multimedia & Creatieve Technologie. Ik hou van 3D-modelling, design en het verkennen van nieuwe technologieën. Met creativiteit en technische vaardigheden werk ik aan projecten die me uitdagen en mijn grenzen verleggen.",
+      "projectsTitle": "Mijn projecten",
+      "hardSkills": "Hard skills",
+      "softSkills": "Soft skills",
+      "uiux": "UI/UX Design",
+      "animation": "3D & Animation",
+      "web": "Web Development",
+      "timeManagement": "Tijdsmanagement",
+      "timeManagementText": "Ik houd rekening met deadlines en lever werk altijd op tijd in. Ik kom liever te vroeg dan te laat.",
+      "disciplined": "Gedisciplineerd",
+      "disciplinedText": "Bij elke taak check ik de vereisten en technische specificaties, zodat ik alles foutloos kan indienen.",
+      "multilingual": "Meertalig",
+      "multilingualText": "Mijn moedertaal is Nederlands. Frans en Engels spreek ik op professioneel niveau.",
+      "communication": "Communicatie",
+      "communicationText": "Ik communiceer duidelijk over mijn mogelijkheden, beperkingen en hulpbehoefte.",
+      "teamwork": "Teamwork",
+      "teamworkText": "Ik werk graag in team, niet alleen omdat het leuk is, maar ook omdat ik veel kan leren van anderen."
+    },
+
+    "about": {
+      "title": "Over mij",
+      "intro1": "Hallo, ik ben Kenza Houben, en studeer momenteel Multimedia en Creatieve Technologie aan de Erasmushogeschool Brussel.",
+      "intro2": "Ik ben altijd bezig met het ontdekken van nieuwe mogelijkheden in 3D en design, en streef ernaar om mezelf steeds verder te ontwikkelen.",
+      "journey": "Mijn reis",
+      "year2021Title": "Moderne talen en economie",
+      "year2021School": "Sint-Jozefscollege in Sint-Pieters-Woluwe",
+      "year2021Text": "Na het behalen van mijn diploma Moderne Talen en Economie in het middelbaar, had ik nog niet direct een duidelijk beeld van mijn toekomstige loopbaan. Omdat ik destijds wel interesse had in lesgeven, overwoog ik om een lerarenopleiding te volgen.",
+      "year2023Title": "Lerarenopleiding Secundair Onderwijs",
+      "year2023School": "Erasmushogeschool Brussel",
+      "year2023Text1": "In 2023 koos ik voor de lerarenopleiding secundair onderwijs, met Nederlands en geschiedenis als keuzevakken. Hoewel ik deze vakken enorm waardeerde, zag ik mezelf niet voor een klas staan. Na een gesprek met de studentenbegeleider kwam Multimedia en Creatieve Technologie als aanbeveling naar voren tussen de vele opties.",
+      "year2023Text2": "Ik bezocht infodagen en openlesdagen en was meteen verkocht: deze richting sprak me direct aan. Ondanks dat ik nog geen ervaring had in dit vakgebied, voelde ik dat ik hier mijn toekomst wilde opbouwen.",
+      "year2024Title": "Multimedia en Creatieve Technologie",
+      "year2024School": "Erasmushogeschool Brussel",
+      "year2024Text1": "Ik ben zonder enige voorkennis aan deze opleiding begonnen, maar heb in de afgelopen twee jaar enorm veel geleerd. Nu, in mijn laatste jaar, ben ik zelfs van plan om na mijn bachelor nog verder te studeren.",
+      "year2024Text2": "Ik hou ervan om mijn creativiteit te ontdekken en toe te passen in nieuwe technologieën. De afgelopen jaren hebben me bevestigd: dit is wat ik later wil doen."
+    },
+
+    "contact": {
+      "title": "Contacteer mij",
+      "subtitle1": "Heb je vragen of een opmerking?",
+      "subtitle2": "Laat het me weten!"
+    },
+
+    "projectsPage": {
+      "title": "Mijn projecten",
+      "all": "Alles",
+      "uiux": "UI/UX Design",
+      "animation": "3D & Animatie",
+      "web": "Web Development"
+    },
+
+    "beau": {
+      "title": "Beau's House",
+      "assignment": "Opdracht",
+      "research": "Onderzoek",
+      "process": "Proces",
+      "result": "Eindresultaat",
+      "assignmentText": "Voor het vak 3D aan MCT bij Erasmushogeschool Brussel kregen we de opdracht om een gestileerd huis te creëren, met extra focus op storytelling. Daarnaast voegde we een gestileerd personage toe om de scène tot leven te brengen.",
+      "researchText1": "Met toestemming van de docent mochten we ons baseren op bestaande personages. Daarom koos ik voor Beau uit Animal Crossing: New Horizons (2020).",
+      "researchText2": "Ik gebruikte Beau en zijn huisje als referentie. Daarnaast nam ik andere props uit het spel, zoals een tafel en bomen, mee in mijn moodboard.",
+      "source": "Animal Crossing: New Horizons (2020) by Nintendo",
+      "processText1": "Tijdens het modelleren begon ik met het huisje en de andere props. In vergelijking met het spel hield ik zowel deze onderdelen als het personage Beau eenvoudiger.",
+      "processText2": "In plaats van texturen te gebruiken, koos ik voor eenvoudige kleuren die elkaar complementeren om de stijl rustig en simpel te houden.",
+      "resultText": "Mijn uiteindelijke setting was Beau die buiten in zijn voortuintje aan het wandelen was en ondertussen zijn cake opat."
+    },
+
+    "cozy": {
+      "title": "Cozy Stride",
+      "assignment": "Opdracht",
+      "research": "Onderzoek",
+      "process": "Proces",
+      "result": "Eindresultaat",
+      "assignmentText1": "Voor het vak Design 3 aan MCT bij Erasmushogeschool Brussel kregen we de opdracht om een logo te ontwerpen voor een fictief schoenenmerk, gebaseerd op schoenen die we eerder met Adobe Firefly hadden gecreëerd.",
+      "assignmentText2": "Mijn fictieve schoenen zijn altijd comfortabel en beschikken over een systeem dat ze in de zomer afkoelt en in de winter verwarmt. Daarnaast gaan ze nooit kapot en worden ze nooit vuil. Mijn doelgroep bestond voornamelijk uit ouderen en kinderen.",
+      "researchText": "Voor de schoenen wilde ik een sterk logo ontwerpen. Ik dacht meteen aan een pinguïn, omdat die koelte symboliseert en aansluit bij het afkoelingssysteem van de schoenen. Als merknaam koos ik Cozy Stride.",
+      "processText": "Ik begon met het maken van verschillende versies van mijn logo, totdat ik een ontwerp vond dat het beste bij het concept en de schoenen paste.",
+      "resultText": "Mijn campagneconcept maakt duidelijk hoe de schoenen afkoelen bij warm weer en verwarmen bij koud weer."
+    },
+
+    "lePetitPrince": {
+      "title": "Le Petit Prince",
+      "assignment": "Opdracht",
+      "research": "Onderzoek",
+      "process": "Proces",
+      "result": "Eindresultaat",
+      "assignmentText": "Voor het vak 3D Modeling & Animatie aan MCT bij Erasmushogeschool Brussel kregen we de opdracht om een kortfilm van 20 seconden tot 1 minuut te maken. Het verhaal speelt zich af in een museum, waar het hoofdpersonage zich tussen de personages van medestudenten begeeft. Naarmate het personage dieper het museum binnengaat, ontvouwt zich een uitzonderlijke gebeurtenis.",
+      "researchText1": "Voor mijn project koos ik het personage Le Petit Prince, specifiek het ontwerp uit de film van Mark Osborne (2015).",
+      "researchText2": "Voordat ik begon met modelleren in Maya, zocht ik eerst goede referentiefoto’s om als basis te gebruiken.",
+      "source": "The Little Prince, 2015 animated film directed by Mark Osborne",
+      "processText1": "Tijdens het modelleren kreeg ik feedback van mijn docent, waarbij bleek dat er in het begin van mijn model een aantal grote fouten zaten. Daarom ben ik opnieuw begonnen. Uiteindelijk was deze moeite de moeite waard: het nieuwe model leek veel accurater op Le Petit Prince.",
+      "processText2": "Toen mijn model in Maya klaar was, ben ik in Adobe Substance Painter begonnen met het textureren.",
+      "processText3": "Tijdens dit proces begon ik me steeds meer te verdiepen in de setting en het scenario waarin mijn karakter zich zou bevinden.",
+      "propsIntro": "Uiteindelijk besloot ik om een aantal props bij te modelleren, zoals:",
+      "planet": "De planeten uit het boek",
+      "plane": "Het vliegtuig van Le Petit Prince",
+      "rose": "Zijn vriendin, de roos",
+      "processText4": "Ik had ook een lantaarn en een boom gemodelleerd, maar deze heb ik uiteindelijk niet meegenomen in mijn definitieve ontwerp, omdat ze niet voldeden aan mijn verwachtingen.",
+      "transitionText1": "Uiteindelijk heb ik de video anders ingevuld dan oorspronkelijk gepland. In plaats van de planeten uit het boek te modelleren, gaf ik elke planeet een eigen personage – gebaseerd op de karakters van medestudenten, elk in een unieke statuepose.",
+      "transitionText2": "Aan het einde van de video komt Le Petit Prince deze personages weer tegen op een nieuwe planeet.",
+      "resultText": "Uiteindelijk heb ik de video anders ingevuld dan oorspronkelijk gepland. In plaats van de planeten uit het boek te modelleren, gaf ik elke planeet een eigen personage – gebaseerd op de karakters van medestudenten, elk in een unieke statuepose. Aan het einde van de video komt Le Petit Prince deze personages weer tegen op een nieuwe planeet."
+    },
+
+    "meAndDevil": {
+      "title": "Me and the Devil",
+      "assignment": "Opdracht",
+      "research": "Onderzoek",
+      "process": "Proces",
+      "result": "Eindresultaat",
+      "assignmentText1": "Voor het vak Design 1 aan MCT bij Erasmushogeschool Brussel kregen we als taak om een lyrische poster te maken. Hierbij mochten we één zin van een liedje nemen en daarvan een poster maken.",
+      "assignmentText2": "Ik heb de zin “Me and the devil walking side by side” gekozen van het liedje Me and the Devil van de artiest Soap&Skin.",
+      "researchText": "Ik ben eerst begonnen met een brainstorm om zo een beter idee te vormen van wat ik in mijn poster wilde. Daarna ben ik begonnen met een paar schetsen en deze schetsen in Adobe Illustrator uit te voeren.",
+      "processText1": "Op basis van feedback van mijn docenten koos ik voor een lyrische poster met een kaartelement. Eerst wilde ik tarotkaarten gebruiken, maar dit bleek te veel te zijn. Daarom stapte ik over naar een gewoon kaartspel.",
+      "processText2": "Vervolgens maakte ik verschillende versies, waarbij ik steeds dichter bij het uiteindelijke ontwerp kwam.",
+      "resultText": "Mijn eindresultaat was een lyrische poster met kaartelementen en een chaotische compositie, waarmee ik de duivel wilde representeren."
+    },
+
+    "myUnoStats": {
+      "title": "My Uno Stats",
+      "assignment": "Opdracht",
+      "research": "Onderzoek",
+      "process": "Proces",
+      "result": "Eindresultaat",
+      "assignmentText1": "Voor het vak Design 2 aan MCT bij Erasmushogeschool Brussel kregen we de opdracht om een infografiek te maken op basis van data die we gedurende vier dagen verzamelden. Het onderwerp mochten we zelf kiezen. Ik koos voor verschillende versies van Uno, zoals Uno Wild en Uno Flip.",
+      "assignmentText2": "Ik hield bij hoe vaak mijn moeder en ik wonnen en verwerkte deze gegevens vervolgens in een infografiek.",
+      "researchText": "Voor deze opdracht zocht ik op Pinterest naar leuke en duidelijke manieren om een infografiek vorm te geven. Zo kwam ik op het idee om elementen van Uno-kaarten te gebruiken, zoals een cirkeldiagram, om mijn data op een visuele manier voor te stellen.",
+      "processText": "Ik maakte de verschillende Uno-kaarten na in Adobe Illustrator om ze later te gebruiken in mijn infografiek.",
+      "resultText": "Het eindresultaat was een infografiek in de stijl van Uno-kaarten, waardoor de data op een speelse en opvallende manier werd gepresenteerd."
+    },
+
+    "smartHome": {
+      "title": "Smart Home",
+      "assignment": "Opdracht",
+      "research": "Onderzoek",
+      "process": "Proces",
+      "result": "Eindresultaat",
+      "assignmentText1": "Voor het vak Design 4 aan MCT bij Erasmushogeschool Brussel kregen we de opdracht om een interactieve high-fidelity prototype te ontwerpen voor de verbetering van monitoring van energiegebruik en monitoring van een smart home. De focus lag op drie aspecten: controle, veiligheid en energiebesparing.",
+      "assignmentText2": "Het prototype moest meer bieden dan alleen bediening per kamer. We ontwierpen een gebruiksvriendelijk dashboard met duidelijke datavisualisaties voor energieverbruik en -opwekking via zonnepanelen. Daarnaast integreerden we een alarmsysteem en functies zoals het weer, kamertemperatuur, luchtvochtigheid, verlichting, HVAC en zonnepanelen.",
+      "researchText": "Ik begon met het maken van een moodboard om de gewenste look & feel van mijn smart home-app te bepalen. Hiervoor zocht ik voorbeelden van andere smart home-apps en onderzocht ik hoe zij data op een gebruiksvriendelijke manier weergeven en hoe de navigatie voor de gebruiker eenvoudig gehouden kan worden.",
+      "processText": "Voor het ontwerpen van de smart home-app in Figma maakte ik een persona, Anaïs. Ze is erg klimaatbewust en wil haar energiegegevens op een eenvoudige manier begrijpen. Op basis van haar behoeften kon ik het design van de app gericht uitwerken.",
+      "resultText": "Het resultaat was een smart home-app waarin gebruikers hun gegevens, zoals energieverbruik, op een overzichtelijke en eenvoudige manier kunnen bekijken. Daarnaast kunnen ze onder andere de weersvoorspelling bekijken en de verlichting in huis bedienen."
+    },
+
+    "surfFestival": {
+      "title": "Surf Festival",
+      "assignment": "Opdracht",
+      "research": "Onderzoek",
+      "process": "Proces",
+      "result": "Eindresultaat",
+      "assignmentText": "Voor het vak Design 2 bij MCT aan Erasmushogeschool Brussel kregen we de opdracht om een website te ontwerpen voor een fictief festival dat we zelf mochten kiezen. Ik koos voor een surffestival dat plaatsvindt op Hawaï.",
+      "researchText": "Ik begon met brainstormen voordat ik mijn moodboard maakte. Hierbij dacht ik na over de compositie, kleuren en andere visuele elementen. Op basis van mijn onderzoek zocht ik daarna op Pinterest naar afbeeldingen die de gewenste look & feel versterkten. Zo kreeg ik een duidelijke richting voor het ontwerp van mijn website.",
+      "processText1": "Ik maakte twee verschillende designs voor de homepage om te bepalen welke kleuren het beste pasten. De eerste versie gebruikte voornamelijk koude kleuren om de oceaan te representeren, terwijl de tweede warme kleuren gebruikte om Hawaï en het klimaat te benadrukken.",
+      "processText2": "Uiteindelijk combineerde ik beide kleurpaletten. Zowel de oceaan als Hawaï zijn belangrijk voor het surf festival, waardoor ik beide elementen wilde laten terugkomen in het ontwerp.",
+      "resultText": "De finale look was een mix van de oceaan en het klimaat van Hawaï, die doorheen de hele website terugkwamen. Zo wilde ik het Hawaï Surf Festival zo goed mogelijk representeren."
+    },
+
+    "whispers": {
+      "title": "Whispers of the Duat",
+      "assignment": "Opdracht",
+      "research": "Onderzoek",
+      "process": "Proces",
+      "result": "Eindresultaat",
+      "assignmentText": "Voor het vak 3D Games aan MCT bij Erasmushogeschool Brussel moesten we in Unity een point-and-click-adventuregame maken met één level en verschillende puzzels. Dit project voerde ik samen met een groepsgenoot uit.",
+      "researchText1": "We zijn begonnen met het maken van een moodboard. Hierin bespraken we vragen zoals: Welk genre willen we? en Hoe moet het spel eruitzien?",
+      "researchText2": "Ieder van ons maakte een eigen moodboard, die we later combineerden tot één overzicht. Ik stelde voor om de omgeving te baseren op The Legend of Zelda: Link’s Awakening (2019), met een dungeon-achtige setting.",
+      "source": "The Legend of Zelda: Link's Awakening (2019) by Nintendo",
+      "processText1": "Na ons onderzoek verdeelden we de taken. Ik was voornamelijk verantwoordelijk voor de environment van het spel. Hiervoor zocht ik gratis low-poly assets in de Unity Store, om een minimalistische, gedetailleerde look te creëren.",
+      "processText2": "Daarnaast hielp ik ook met spelmechanieken, zoals:",
+      "enemy": "Vijanden die beperkt bleven tot één ruimte",
+      "hearts": "Het hartensysteem",
+      "etc": "Etc.",
+      "processText3": "Mijn groepsgenoot richtte zich vooral op de logica van het spel. Voor de puzzels bedachten we elk een eigen idee:",
+      "maze": "Hij stelde voor om een doolhof te maken waar de speler aan het einde een sleutel moest vinden.",
+      "enemyPuzzle": "Ik bedacht een puzzel waarbij de speler alle vijanden in een ruimte moest verslaan.",
+      "processText4": "We hadden aanvankelijk vier puzzels gepland, maar besloten uiteindelijk om er drie te maken. Deze keuze maakt het ontwerp van de dungeon overzichtelijker en haalbaarder.",
+      "resultText": "Uiteindelijk resulteerde dit in een klein, maar leuk dungeon-level, sterk geïnspireerd op The Legend of Zelda: Link’s Awakening (2019)."
+    }
+  },
+
+  "fr": {
+    "common": {
+      "home": "Accueil",
+      "about": "À propos de moi",
+      "projects": "Projets",
+      "contact": "Contact",
+      "nl": "NL",
+      "fr": "FR",
+      "eng": "ENG",
+      "menuOpen": "Ouvrir le menu",
+      "menuClose": "Fermer le menu",
+      "back": "Retourner à la page précédente",
+      "linkedin": "LinkedIn",
+      "artstation": "ArtStation",
+      "copyright": "© 2026 Kenza. Tous droits réservés",
+      "seeMore": "Voir plus",
+      "figma": "Figma",
+      "send": "Envoyer",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Adresse e-mail",
+      "message": "Message"
+    },
+
+    "home": {
+      "tagline": "Motivée • Persévérante • Réfléchie",
+      "intro": "Salut ! Je m'appelle Kenza, je suis une étudiante passionnée en Technologie Multimédia et Créative. J'aime la modélisation 3D, le design et l'exploration de nouvelles technologies. Grâce à ma créativité et à mes compétences techniques, je travaille sur des projets qui me mettent au défi et repoussent mes limites.",
+      "projectsTitle": "Mes projets",
+      "hardSkills": "Hard skills",
+      "softSkills": "Soft skills",
+      "uiux": "Design UI/UX",
+      "animation": "3D & Animation",
+      "web": "Développement web",
+      "timeManagement": "Gestion du temps",
+      "timeManagementText": "Je tiens compte des délais et rends toujours mon travail à temps. Je préfère être en avance plutôt qu'en retard.",
+      "disciplined": "Disciplinée",
+      "disciplinedText": "Pour chaque tâche, je vérifie les exigences et les spécifications techniques afin de tout remettre correctement.",
+      "multilingual": "Multilingue",
+      "multilingualText": "Ma langue maternelle est le néerlandais. Je parle français et anglais à un niveau professionnel.",
+      "communication": "Communication",
+      "communicationText": "Je communique clairement sur mes possibilités, mes limites et mes besoins d'aide.",
+      "teamwork": "Travail d'équipe",
+      "teamworkText": "J'aime travailler en équipe, non seulement parce que c'est agréable, mais aussi parce que je peux beaucoup apprendre des autres."
+    },
+
+    "about": {
+      "title": "À propos de moi",
+      "intro1": "Bonjour, je m'appelle Kenza Houben et j'étudie actuellement la Technologie Multimédia et Créative à l'Erasmushogeschool Brussel.",
+      "intro2": "Je cherche constamment de nouvelles possibilités dans la 3D et le design et je m'efforce de toujours continuer à progresser.",
+      "journey": "Mon parcours",
+      "year2021Title": "Langues modernes et économie",
+      "year2021School": "Sint-Jozefscollege à Sint-Pieters-Woluwe",
+      "year2021Text": "Après avoir obtenu mon diplôme en langues modernes et économie dans l'enseignement secondaire, je n'avais pas encore une idée précise de mon avenir professionnel. Comme j'avais à l'époque un intérêt pour l'enseignement, j'envisageais de suivre une formation pédagogique.",
+      "year2023Title": "Formation des enseignants du secondaire",
+      "year2023School": "Erasmushogeschool Brussel",
+      "year2023Text1": "En 2023, j'ai choisi la formation des enseignants du secondaire, avec le néerlandais et l'histoire comme matières à option. Même si j'appréciais énormément ces matières, je ne me voyais pas devant une classe. Après une discussion avec le conseiller aux étudiants, la Technologie Multimédia et Créative m'a été recommandée parmi les nombreuses possibilités.",
+      "year2023Text2": "J'ai visité des journées d'information et des journées portes ouvertes et j'ai immédiatement été convaincue : cette orientation m'a directement attirée. Même si je n'avais aucune expérience dans ce domaine, j'ai senti que je voulais construire mon avenir ici.",
+      "year2024Title": "Technologie Multimédia et Créative",
+      "year2024School": "Erasmushogeschool Brussel",
+      "year2024Text1": "J'ai commencé cette formation sans aucune connaissance préalable, mais j'ai énormément appris au cours des deux dernières années. Maintenant, en dernière année, je prévois même de poursuivre mes études après mon bachelor.",
+      "year2024Text2": "J'aime découvrir ma créativité et l'appliquer aux nouvelles technologies. Ces dernières années m'ont confirmé que c'est ce que je veux faire plus tard."
+    },
+
+    "contact": {
+      "title": "Contactez-moi",
+      "subtitle1": "Vous avez une question ou une remarque ?",
+      "subtitle2": "Faites-le-moi savoir !"
+    },
+
+    "projectsPage": {
+      "title": "Mes projets",
+      "all": "Tous",
+      "uiux": "Design UI/UX",
+      "animation": "3D & Animation",
+      "web": "Développement web"
+    },
+
+    "beau": {
+      "title": "Beau's House",
+      "assignment": "Projet",
+      "research": "Recherche",
+      "process": "Processus",
+      "result": "Résultat final",
+      "assignmentText": "Pour le cours de 3D à MCT à l'Erasmushogeschool Brussel, nous devions créer une maison stylisée, avec un accent particulier sur le storytelling. Nous avons également ajouté un personnage stylisé pour donner vie à la scène.",
+      "researchText1": "Avec l'autorisation du professeur, nous pouvions nous baser sur des personnages existants. J'ai donc choisi Beau de Animal Crossing: New Horizons (2020).",
+      "researchText2": "J'ai utilisé Beau et sa maison comme référence. J'ai également intégré d'autres éléments du jeu, comme une table et des arbres, dans mon moodboard.",
+      "source": "Animal Crossing: New Horizons (2020) by Nintendo",
+      "processText1": "Pendant la modélisation, j'ai commencé par la maison et les autres éléments. Par rapport au jeu, j'ai simplifié aussi bien ces éléments que le personnage de Beau.",
+      "processText2": "Au lieu d'utiliser des textures, j'ai choisi des couleurs simples qui se complètent afin de garder un style calme et épuré.",
+      "resultText": "Ma scène finale montre Beau qui se promène dans son jardin avant tout en mangeant son gâteau."
+    },
+
+    "cozy": {
+      "title": "Cozy Stride",
+      "assignment": "Projet",
+      "research": "Recherche",
+      "process": "Processus",
+      "result": "Résultat final",
+      "assignmentText1": "Pour le cours de Design 3 à MCT à l'Erasmushogeschool Brussel, nous devions créer un logo pour une marque de chaussures fictive, basée sur des chaussures que nous avions précédemment créées avec Adobe Firefly.",
+      "assignmentText2": "Mes chaussures fictives sont toujours confortables et disposent d'un système qui les refroidit en été et les réchauffe en hiver. De plus, elles ne se cassent jamais et ne se salissent jamais. Mon public cible était principalement composé de personnes âgées et d'enfants.",
+      "researchText": "Je voulais créer un logo fort pour les chaussures. J'ai immédiatement pensé à un pingouin, car il symbolise la fraîcheur et correspond au système de refroidissement des chaussures. J'ai choisi Cozy Stride comme nom de marque.",
+      "processText": "J'ai commencé par créer différentes versions de mon logo jusqu'à trouver un design qui correspondait le mieux au concept et aux chaussures.",
+      "resultText": "Mon concept de campagne montre comment les chaussures se refroidissent par temps chaud et se réchauffent par temps froid."
+    },
+
+    "lePetitPrince": {
+      "title": "Le Petit Prince",
+      "assignment": "Projet",
+      "research": "Recherche",
+      "process": "Processus",
+      "result": "Résultat final",
+      "assignmentText": "Pour le cours de 3D Modeling & Animation à MCT à l'Erasmushogeschool Brussel, nous devions réaliser un court-métrage de 20 secondes à 1 minute. L'histoire se déroule dans un musée, où le personnage principal se déplace parmi les personnages de ses camarades. Au fur et à mesure qu'il avance dans le musée, un événement exceptionnel se produit.",
+      "researchText1": "Pour mon projet, j'ai choisi le personnage du Petit Prince, plus précisément le design du film de Mark Osborne (2015).",
+      "researchText2": "Avant de commencer la modélisation dans Maya, j'ai d'abord cherché de bonnes photos de référence à utiliser comme base.",
+      "source": "The Little Prince, 2015 animated film directed by Mark Osborne",
+      "processText1": "Pendant la modélisation, j'ai reçu des commentaires de mon professeur. Il s'est avéré qu'il y avait plusieurs grosses erreurs dans mon modèle au début. J'ai donc recommencé. Finalement, cet effort en valait la peine : le nouveau modèle ressemblait beaucoup plus précisément au Petit Prince.",
+      "processText2": "Une fois mon modèle terminé dans Maya, j'ai commencé à le texturer dans Adobe Substance Painter.",
+      "processText3": "Pendant ce processus, je me suis également de plus en plus intéressée à l'environnement et au scénario dans lequel mon personnage allait évoluer.",
+      "propsIntro": "J'ai finalement décidé de modéliser plusieurs accessoires, tels que :",
+      "planet": "Les planètes du livre",
+      "plane": "L'avion du Petit Prince",
+      "rose": "Son amie, la rose",
+      "processText4": "J'avais également modélisé une lanterne et un arbre, mais je ne les ai finalement pas inclus dans mon design définitif, car ils ne répondaient pas à mes attentes.",
+      "transitionText1": "Finalement, j'ai donné à la vidéo une direction différente de celle prévue initialement. Au lieu de modéliser les planètes du livre, j'ai donné à chaque planète son propre personnage, basé sur les personnages de mes camarades, chacun dans une pose de statue unique.",
+      "transitionText2": "À la fin de la vidéo, Le Petit Prince retrouve ces personnages sur une nouvelle planète.",
+      "resultText": "Finalement, j'ai donné à la vidéo une direction différente de celle prévue initialement. Au lieu de modéliser les planètes du livre, j'ai donné à chaque planète son propre personnage, basé sur les personnages de mes camarades, chacun dans une pose de statue unique. À la fin de la vidéo, Le Petit Prince retrouve ces personnages sur une nouvelle planète."
+    },
+
+    "meAndDevil": {
+      "title": "Me and the Devil",
+      "assignment": "Projet",
+      "research": "Recherche",
+      "process": "Processus",
+      "result": "Résultat final",
+      "assignmentText1": "Pour le cours de Design 1 à MCT à l'Erasmushogeschool Brussel, nous devions créer une affiche lyrique. Nous pouvions choisir une phrase d'une chanson et créer une affiche à partir de celle-ci.",
+      "assignmentText2": "J'ai choisi la phrase « Me and the devil walking side by side » de la chanson Me and the Devil de l'artiste Soap&Skin.",
+      "researchText": "J'ai d'abord commencé par un brainstorming afin de mieux définir mon idée pour l'affiche. Ensuite, j'ai réalisé quelques croquis avant de les exécuter dans Adobe Illustrator.",
+      "processText1": "Sur la base des commentaires de mes professeurs, j'ai choisi de créer une affiche lyrique avec un élément de carte. Je voulais d'abord utiliser des cartes de tarot, mais cela s'est avéré trop chargé. Je suis donc passée à un jeu de cartes classique.",
+      "processText2": "J'ai ensuite créé différentes versions en me rapprochant progressivement du design final.",
+      "resultText": "Mon résultat final était une affiche lyrique avec des éléments de cartes et une composition chaotique, avec laquelle je voulais représenter le diable."
+    },
+
+    "myUnoStats": {
+      "title": "My Uno Stats",
+      "assignment": "Projet",
+      "research": "Recherche",
+      "process": "Processus",
+      "result": "Résultat final",
+      "assignmentText1": "Pour le cours de Design 2 à MCT à l'Erasmushogeschool Brussel, nous devions créer une infographie basée sur des données collectées pendant quatre jours. Nous pouvions choisir nous-mêmes le sujet. J'ai choisi différentes versions d'Uno, comme Uno Wild et Uno Flip.",
+      "assignmentText2": "J'ai noté combien de fois ma mère et moi gagnions, puis j'ai intégré ces données dans une infographie.",
+      "researchText": "Pour cette mission, j'ai recherché sur Pinterest des manières intéressantes et claires de créer une infographie. Cela m'a donné l'idée d'utiliser des éléments des cartes Uno, comme un diagramme circulaire, pour représenter mes données de manière visuelle.",
+      "processText": "J'ai recréé les différentes cartes Uno dans Adobe Illustrator afin de pouvoir les utiliser plus tard dans mon infographie.",
+      "resultText": "Le résultat final était une infographie dans le style des cartes Uno, permettant de présenter les données de manière ludique et accrocheuse."
+    },
+
+    "smartHome": {
+      "title": "Smart Home",
+      "assignment": "Projet",
+      "research": "Recherche",
+      "process": "Processus",
+      "result": "Résultat final",
+      "assignmentText1": "Pour le cours de Design 4 à MCT à l'Erasmushogeschool Brussel, nous devions concevoir un prototype interactif haute fidélité visant à améliorer le suivi de la consommation énergétique et la gestion d'une smart home. L'accent était mis sur trois aspects : le contrôle, la sécurité et les économies d'énergie.",
+      "assignmentText2": "Le prototype devait offrir plus qu'une simple commande par pièce. Nous avons conçu un tableau de bord convivial avec des visualisations claires de la consommation et de la production d'énergie via des panneaux solaires. Nous avons également intégré un système d'alarme et des fonctions telles que la météo, la température, l'humidité, l'éclairage, le HVAC et les panneaux solaires.",
+      "researchText": "J'ai commencé par créer un moodboard afin de déterminer le look & feel souhaité de mon application smart home. J'ai recherché des exemples d'autres applications smart home et étudié leur manière d'afficher les données de façon conviviale ainsi que leur navigation.",
+      "processText": "Pour concevoir l'application smart home dans Figma, j'ai créé un persona, Anaïs. Elle est très sensible aux questions climatiques et souhaite comprendre ses données énergétiques de manière simple. En me basant sur ses besoins, j'ai pu orienter le design de l'application.",
+      "resultText": "Le résultat était une application smart home permettant aux utilisateurs de consulter leurs données, telles que leur consommation énergétique, de manière claire et simple. Ils peuvent également consulter les prévisions météo et contrôler l'éclairage de leur maison."
+    },
+
+    "surfFestival": {
+      "title": "Surf Festival",
+      "assignment": "Projet",
+      "research": "Recherche",
+      "process": "Processus",
+      "result": "Résultat final",
+      "assignmentText": "Pour le cours de Design 2 à MCT à l'Erasmushogeschool Brussel, nous devions concevoir un site web pour un festival fictif de notre choix. J'ai choisi un festival de surf qui se déroule à Hawaï.",
+      "researchText": "J'ai commencé par un brainstorming avant de créer mon moodboard. J'ai réfléchi à la composition, aux couleurs et aux autres éléments visuels. Sur la base de mes recherches, j'ai ensuite cherché sur Pinterest des images renforçant le look & feel souhaité. Cela m'a donné une direction claire pour le design de mon site web.",
+      "processText1": "J'ai créé deux designs différents pour la homepage afin de déterminer quelles couleurs convenaient le mieux. La première version utilisait principalement des couleurs froides pour représenter l'océan, tandis que la seconde utilisait des couleurs chaudes pour représenter Hawaï et son climat.",
+      "processText2": "J'ai finalement combiné les deux palettes de couleurs. L'océan et Hawaï sont tous deux importants pour le festival de surf, et je voulais donc faire apparaître ces deux éléments dans le design.",
+      "resultText": "Le look final était un mélange de l'océan et du climat d'Hawaï, qui revenaient tout au long du site. Je voulais ainsi représenter au mieux le Hawaï Surf Festival."
+    },
+
+    "whispers": {
+      "title": "Whispers of the Duat",
+      "assignment": "Projet",
+      "research": "Recherche",
+      "process": "Processus",
+      "result": "Résultat final",
+      "assignmentText": "Pour le cours de 3D Games à MCT à l'Erasmushogeschool Brussel, nous devions créer dans Unity un jeu d'aventure point-and-click avec un seul niveau et plusieurs énigmes. J'ai réalisé ce projet avec un camarade.",
+      "researchText1": "Nous avons commencé par créer un moodboard. Nous y avons discuté de questions telles que : Quel genre voulons-nous ? Et à quoi le jeu doit-il ressembler ?",
+      "researchText2": "Nous avons chacun réalisé notre propre moodboard, que nous avons ensuite combiné en un seul aperçu. J'ai proposé de baser l'environnement sur The Legend of Zelda: Link’s Awakening (2019), avec une ambiance de donjon.",
+      "source": "The Legend of Zelda: Link's Awakening (2019) by Nintendo",
+      "processText1": "Après nos recherches, nous avons réparti les tâches. J'étais principalement responsable de l'environnement du jeu. J'ai recherché des assets low-poly gratuits dans la Unity Store afin de créer un style minimaliste et détaillé.",
+      "processText2": "J'ai également participé aux mécaniques de jeu, telles que :",
+      "enemy": "Des ennemis limités à une seule pièce",
+      "hearts": "Le système de cœurs",
+      "etc": "Etc.",
+      "processText3": "Mon camarade s'est principalement concentré sur la logique du jeu. Pour les énigmes, nous avons chacun proposé une idée :",
+      "maze": "Il a proposé de créer un labyrinthe dans lequel le joueur devait trouver une clé à la fin.",
+      "enemyPuzzle": "J'ai imaginé une énigme dans laquelle le joueur devait vaincre tous les ennemis présents dans une pièce.",
+      "processText4": "Nous avions initialement prévu quatre énigmes, mais avons finalement décidé d'en créer trois. Ce choix rend le design du donjon plus clair et plus réalisable.",
+      "resultText": "Cela a finalement donné un petit niveau de donjon amusant, fortement inspiré de The Legend of Zelda: Link’s Awakening (2019)."
+    }
+  },
+
+  "en": {
+    "common": {
+      "home": "Home",
+      "about": "About me",
+      "projects": "Projects",
+      "contact": "Contact",
+      "nl": "NL",
+      "fr": "FR",
+      "eng": "ENG",
+      "menuOpen": "Open menu",
+      "menuClose": "Close menu",
+      "back": "Go back to the previous page",
+      "linkedin": "LinkedIn",
+      "artstation": "ArtStation",
+      "copyright": "© 2026 Kenza. All rights reserved",
+      "seeMore": "See more",
+      "figma": "Figma",
+      "send": "Send",
+      "firstName": "First name",
+      "lastName": "Name",
+      "email": "Email address",
+      "message": "Message"
+    },
+
+    "home": {
+      "tagline": "Driven • Determined • Thoughtful",
+      "intro": "Hi! I'm Kenza, a passionate Multimedia & Creative Technology student. I love 3D modelling, design and exploring new technologies. With creativity and technical skills, I work on projects that challenge me and push my boundaries.",
+      "projectsTitle": "My projects",
+      "hardSkills": "Hard skills",
+      "softSkills": "Soft skills",
+      "uiux": "UI/UX Design",
+      "animation": "3D & Animation",
+      "web": "Web Development",
+      "timeManagement": "Time management",
+      "timeManagementText": "I keep deadlines in mind and always submit my work on time. I prefer being early rather than late.",
+      "disciplined": "Disciplined",
+      "disciplinedText": "For every task, I check the requirements and technical specifications so I can submit everything correctly.",
+      "multilingual": "Multilingual",
+      "multilingualText": "My native language is Dutch. I speak French and English at a professional level.",
+      "communication": "Communication",
+      "communicationText": "I communicate clearly about my abilities, limitations and need for support.",
+      "teamwork": "Teamwork",
+      "teamworkText": "I enjoy working in a team, not only because it is fun, but also because I can learn a lot from others."
+    },
+
+    "about": {
+      "title": "About me",
+      "intro1": "Hello, I'm Kenza Houben, and I am currently studying Multimedia & Creative Technology at Erasmushogeschool Brussel.",
+      "intro2": "I am always exploring new possibilities in 3D and design and strive to keep developing myself further.",
+      "journey": "My journey",
+      "year2021Title": "Modern languages and economics",
+      "year2021School": "Sint-Jozefscollege in Sint-Pieters-Woluwe",
+      "year2021Text": "After graduating in Modern Languages and Economics in secondary school, I did not yet have a clear idea of what I wanted to do in the future. Because I was interested in teaching at the time, I considered following a teacher training programme.",
+      "year2023Title": "Secondary Education Teacher Training",
+      "year2023School": "Erasmushogeschool Brussel",
+      "year2023Text1": "In 2023, I chose secondary teacher training, with Dutch and history as my subjects. Although I really enjoyed these subjects, I did not see myself standing in front of a classroom. After talking to the student counsellor, Multimedia & Creative Technology was recommended to me among the many options.",
+      "year2023Text2": "I visited information days and open class days and was immediately convinced: this direction appealed to me right away. Despite having no experience in this field, I felt that I wanted to build my future here.",
+      "year2024Title": "Multimedia & Creative Technology",
+      "year2024School": "Erasmushogeschool Brussel",
+      "year2024Text1": "I started this programme without any prior knowledge, but I have learned an enormous amount over the past two years. Now, in my final year, I even plan to continue studying after my bachelor's degree.",
+      "year2024Text2": "I love discovering my creativity and applying it to new technologies. The past few years have confirmed that this is what I want to do in the future."
+    },
+
+    "contact": {
+      "title": "Contact me",
+      "subtitle1": "Do you have a question or a comment?",
+      "subtitle2": "Let me know!"
+    },
+
+    "projectsPage": {
+      "title": "My projects",
+      "all": "All",
+      "uiux": "UI/UX Design",
+      "animation": "3D & Animation",
+      "web": "Web Development"
+    },
+
+    "beau": {
+      "title": "Beau's House",
+      "assignment": "Assignment",
+      "research": "Research",
+      "process": "Process",
+      "result": "Final result",
+      "assignmentText": "For the 3D course at MCT at Erasmushogeschool Brussel, we were asked to create a stylised house, with an extra focus on storytelling. We also added a stylised character to bring the scene to life.",
+      "researchText1": "With the teacher's permission, we were allowed to base our work on existing characters. I chose Beau from Animal Crossing: New Horizons (2020).",
+      "researchText2": "I used Beau and his house as a reference. I also included other props from the game, such as a table and trees, in my moodboard.",
+      "source": "Animal Crossing: New Horizons (2020) by Nintendo",
+      "processText1": "During the modelling process, I started with the house and the other props. Compared to the game, I simplified both these elements and the character Beau.",
+      "processText2": "Instead of using textures, I chose simple colours that complement each other to keep the style calm and simple.",
+      "resultText": "My final setting shows Beau walking outside in his front garden while eating his cake."
+    },
+
+    "cozy": {
+      "title": "Cozy Stride",
+      "assignment": "Assignment",
+      "research": "Research",
+      "process": "Process",
+      "result": "Final result",
+      "assignmentText1": "For the Design 3 course at MCT at Erasmushogeschool Brussel, we were asked to design a logo for a fictional shoe brand, based on shoes we had previously created with Adobe Firefly.",
+      "assignmentText2": "My fictional shoes are always comfortable and have a system that cools them in summer and warms them in winter. They also never break and never get dirty. My target audience mainly consisted of elderly people and children.",
+      "researchText": "I wanted to create a strong logo for the shoes. I immediately thought of a penguin because it symbolises coolness and connects to the shoes' cooling system. I chose Cozy Stride as the brand name.",
+      "processText": "I started by creating different versions of my logo until I found a design that best suited the concept and the shoes.",
+      "resultText": "My campaign concept makes it clear how the shoes cool down in warm weather and warm up in cold weather."
+    },
+
+    "lePetitPrince": {
+      "title": "Le Petit Prince",
+      "assignment": "Assignment",
+      "research": "Research",
+      "process": "Process",
+      "result": "Final result",
+      "assignmentText": "For the 3D Modeling & Animation course at MCT at Erasmushogeschool Brussel, we were asked to create a short film between 20 seconds and 1 minute long. The story takes place in a museum, where the main character moves among the characters created by fellow students. As the character moves deeper into the museum, an extraordinary event unfolds.",
+      "researchText1": "For my project, I chose the character Le Petit Prince, specifically the design from Mark Osborne's 2015 film.",
+      "researchText2": "Before I started modelling in Maya, I first searched for good reference photos to use as a basis.",
+      "source": "The Little Prince, 2015 animated film directed by Mark Osborne",
+      "processText1": "During the modelling process, I received feedback from my teacher, which showed that there were several major mistakes in the early version of my model. So I started over. In the end, the effort was worth it: the new model looked much more accurate compared to Le Petit Prince.",
+      "processText2": "Once my model was finished in Maya, I started texturing it in Adobe Substance Painter.",
+      "processText3": "During this process, I also became increasingly interested in the setting and scenario in which my character would appear.",
+      "propsIntro": "I eventually decided to model a number of props, such as:",
+      "planet": "The planets from the book",
+      "plane": "Le Petit Prince's plane",
+      "rose": "His friend, the rose",
+      "processText4": "I also modelled a lantern and a tree, but I ultimately did not include them in my final design because they did not meet my expectations.",
+      "transitionText1": "In the end, I gave the video a different direction from what I originally planned. Instead of modelling the planets from the book, I gave each planet its own character, based on the characters of fellow students, each in a unique statue pose.",
+      "transitionText2": "At the end of the video, Le Petit Prince encounters these characters again on a new planet.",
+      "resultText": "In the end, I gave the video a different direction from what I originally planned. Instead of modelling the planets from the book, I gave each planet its own character, based on the characters of fellow students, each in a unique statue pose. At the end of the video, Le Petit Prince encounters these characters again on a new planet."
+    },
+
+    "meAndDevil": {
+      "title": "Me and the Devil",
+      "assignment": "Assignment",
+      "research": "Research",
+      "process": "Process",
+      "result": "Final result",
+      "assignmentText1": "For the Design 1 course at MCT at Erasmushogeschool Brussel, we were asked to create a lyrical poster. We could choose one sentence from a song and create a poster around it.",
+      "assignmentText2": "I chose the line “Me and the devil walking side by side” from the song Me and the Devil by the artist Soap&Skin.",
+      "researchText": "I first started with a brainstorm to form a better idea of what I wanted to do with my poster. Then I created a few sketches and developed them in Adobe Illustrator.",
+      "processText1": "Based on feedback from my teachers, I chose to create a lyrical poster with a card element. At first I wanted to use tarot cards, but this became too much. So I switched to a regular deck of playing cards.",
+      "processText2": "I then created several versions, gradually moving closer to the final design.",
+      "resultText": "My final result was a lyrical poster with card elements and a chaotic composition, through which I wanted to represent the devil."
+    },
+
+    "myUnoStats": {
+      "title": "My Uno Stats",
+      "assignment": "Assignment",
+      "research": "Research",
+      "process": "Process",
+      "result": "Final result",
+      "assignmentText1": "For the Design 2 course at MCT at Erasmushogeschool Brussel, we were asked to create an infographic based on data collected over four days. We could choose the subject ourselves. I chose different versions of Uno, such as Uno Wild and Uno Flip.",
+      "assignmentText2": "I kept track of how often my mother and I won and then processed these results into an infographic.",
+      "researchText": "For this assignment, I searched Pinterest for fun and clear ways to create an infographic. This gave me the idea to use elements from Uno cards, such as a pie chart, to present my data visually.",
+      "processText": "I recreated the different Uno cards in Adobe Illustrator so that I could use them later in my infographic.",
+      "resultText": "The final result was an infographic in the style of Uno cards, presenting the data in a playful and eye-catching way."
+    },
+
+    "smartHome": {
+      "title": "Smart Home",
+      "assignment": "Assignment",
+      "research": "Research",
+      "process": "Process",
+      "result": "Final result",
+      "assignmentText1": "For the Design 4 course at MCT at Erasmushogeschool Brussel, we were asked to design an interactive high-fidelity prototype to improve monitoring of energy use and a smart home. The focus was on three aspects: control, safety and energy saving.",
+      "assignmentText2": "The prototype had to offer more than simply controlling each room. We designed a user-friendly dashboard with clear visualisations of energy consumption and generation through solar panels. We also integrated an alarm system and features such as weather, room temperature, humidity, lighting, HVAC and solar panels.",
+      "researchText": "I started by creating a moodboard to determine the desired look & feel of my smart home app. I looked for examples of other smart home apps and studied how they present data in a user-friendly way and how their navigation works.",
+      "processText": "To design the smart home app in Figma, I created a persona, Anaïs. She is very climate-conscious and wants to understand her energy data in a simple way. Based on her needs, I was able to develop the app and design with a clear focus.",
+      "resultText": "The result was a smart home app in which users can view their data, such as energy consumption, in a clear and simple way. They can also view the weather forecast and control the lighting in their home."
+    },
+
+    "surfFestival": {
+      "title": "Surf Festival",
+      "assignment": "Assignment",
+      "research": "Research",
+      "process": "Process",
+      "result": "Final result",
+      "assignmentText": "For the Design 2 course at MCT at Erasmushogeschool Brussel, we were asked to design a website for a fictional festival of our choice. I chose a surf festival taking place in Hawaii.",
+      "researchText": "I started brainstorming before creating my moodboard. I thought about composition, colours and other visual elements. Based on my research, I then searched Pinterest for images that strengthened the desired look & feel. This gave me a clear direction for the design of my website.",
+      "processText1": "I created two different homepage designs to determine which colours worked best. The first version mainly used cool colours to represent the ocean, while the second used warm colours to represent Hawaii and its climate.",
+      "processText2": "I eventually combined both colour palettes. Both the ocean and Hawaii are important to the surf festival, so I wanted both elements to appear in the design.",
+      "resultText": "The final look was a mix of the ocean and the climate of Hawaii, which returned throughout the website. This was how I wanted to represent the Hawaii Surf Festival as well as possible."
+    },
+
+    "whispers": {
+      "title": "Whispers of the Duat",
+      "assignment": "Assignment",
+      "research": "Research",
+      "process": "Process",
+      "result": "Final result",
+      "assignmentText": "For the 3D Games course at MCT at Erasmushogeschool Brussel, we had to create a point-and-click adventure game in Unity with one level and several puzzles. I created this project together with a fellow student.",
+      "researchText1": "We started by creating a moodboard. We discussed questions such as: What genre do we want? And what should the game look like?",
+      "researchText2": "Each of us created our own moodboard, which we later combined into one overview. I suggested basing the environment on The Legend of Zelda: Link's Awakening (2019), with a dungeon-like setting.",
+      "source": "The Legend of Zelda: Link's Awakening (2019) by Nintendo",
+      "processText1": "After our research, we divided the tasks. I was mainly responsible for the environment of the game. I searched for free low-poly assets in the Unity Store to create a minimalist, detailed look.",
+      "processText2": "I also helped with game mechanics, such as:",
+      "enemy": "Enemies limited to one room",
+      "hearts": "The heart system",
+      "etc": "Etc.",
+      "processText3": "My teammate mainly focused on the logic of the game. For the puzzles, we each came up with an idea:",
+      "maze": "He suggested creating a maze where the player had to find a key at the end.",
+      "enemyPuzzle": "I came up with a puzzle where the player had to defeat all the enemies in a room.",
+      "processText4": "We originally planned four puzzles, but eventually decided to make three. This choice makes the dungeon design clearer and more achievable.",
+      "resultText": "The final result was a small but fun dungeon level, strongly inspired by The Legend of Zelda: Link's Awakening (2019)."
+    }
+  }
+}

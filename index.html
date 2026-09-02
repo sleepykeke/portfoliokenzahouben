@@ -4,58 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+
+    <title data-i18n="home.title">Home</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body class="index-body">
 
-  <!-- Hamburger menu -->
+<body class="index-body" data-page="home">
+
+
+    <!-- ==================================================
+         HAMBURGER MENU
+    ================================================== -->
+
     <div class="hamburger-menu">
 
-        <!-- Hamburger knop -->
-        <button class="hamburger-button" aria-label="Menu openen">
+        <button
+            class="hamburger-button"
+            aria-label="Menu openen"
+            type="button"
+            data-i18n="common.menuOpen"
+            data-i18n-attr="aria-label"
+        >
             <span></span>
             <span></span>
             <span></span>
         </button>
 
 
-        <!-- Menu overlay -->
         <nav class="menu-overlay">
 
-            <!-- Noise achtergrond -->
             <img
                 src="./images/noise_background.png"
                 class="menu-backgroundnoise"
                 alt=""
             >
 
-            <!-- Sluitknop -->
-            <button class="menu-close" aria-label="Menu sluiten">
+
+            <button
+                class="menu-close"
+                aria-label="Menu sluiten"
+                type="button"
+                data-i18n="common.menuClose"
+                data-i18n-attr="aria-label"
+            >
                 ×
             </button>
 
 
-            <!-- Navigatie -->
             <div class="menu-content">
 
-                <h6><a href="index.html">Home</a></h6>
-                <h6><a href="about.html">Over mij</a></h6>
-                <h6><a href="projects.html">Projecten</a></h6>
-                <h6><a href="contact.html">Contact</a></h6>
+                <h6>
+                    <a
+                        href="index.html"
+                        data-i18n="common.home"
+                    ></a>
+                </h6>
+
+                <h6>
+                    <a
+                        href="about.html"
+                        data-i18n="common.about"
+                    ></a>
+                </h6>
+
+                <h6>
+                    <a
+                        href="projects.html"
+                        data-i18n="common.projects"
+                    ></a>
+                </h6>
+
+                <h6>
+                    <a
+                        href="contact.html"
+                        data-i18n="common.contact"
+                    ></a>
+                </h6>
+
 
                 <!-- Talen -->
+
                 <div class="menu-languages">
+
                     <h3>
-                        <a href="#">NL</a>
+
+                        <a
+                            href="#"
+                            data-lang="nl"
+                            data-i18n="common.nl"
+                        ></a>
+
                         <span>|</span>
-                        <a href="#">FR</a>
+
+                        <a
+                            href="#"
+                            data-lang="fr"
+                            data-i18n="common.fr"
+                        ></a>
+
                         <span>|</span>
-                        <a href="#">ENG</a>
+
+                        <a
+                            href="#"
+                            data-lang="en"
+                            data-i18n="common.eng"
+                        ></a>
+
                     </h3>
+
                 </div>
 
             </div>
@@ -65,212 +124,446 @@
     </div>
 
 
-    <!-- Intro -->
+
+    <!-- ==================================================
+         INTRO
+    ================================================== -->
+
     <header class="header-wrapper">
 
         <div class="index-intro">
 
             <h1>Kenza</h1>
-            <h1 class="houben">Houben</h1>
 
-            <h3>Gedreven • Doorzetter • Denker</h3>
+            <h1 class="houben">
+                Houben
+            </h1>
 
-            <p>
-                Hoi! Ik ben Kenza, een gepassioneerde student Multimedia & Creatieve Technologie.
-                Ik hou van 3D-modelling, design en het verkennen van nieuwe technologieën.
-                Met creativiteit en technische vaardigheden werk ik aan projecten die me uitdagen
+
+            <h3 data-i18n="home.tagline">
+                Gedreven • Doorzetter • Denker
+            </h3>
+
+
+            <p data-i18n="home.intro">
+                Hoi! Ik ben Kenza, een gepassioneerde student Multimedia &
+                Creatieve Technologie. Ik hou van 3D-modelling, design en
+                het verkennen van nieuwe technologieën. Met creativiteit en
+                technische vaardigheden werk ik aan projecten die me uitdagen
                 en mijn grenzen verleggen.
             </p>
 
         </div>
 
-        <img src="" class="kenzahouben-index" alt="">
+
+        <img
+            src=""
+            class="kenzahouben-index"
+            alt=""
+        >
 
     </header>
 
 
-    <!-- Projecten -->
-   <!-- Projecten -->
-        <main class="index-wrapper">
 
-            <section class="three-projects">
-                <img
-                    src="./images/noise_background.png"
-                    class="backgroundnoise-index"
-                    alt=""
-                >
-                <h2>Mijn projecten</h2>
+    <!-- ==================================================
+         PROJECTEN
+    ================================================== -->
 
-               <div class="projects-row">
-
-                    <div class="project-index">
-                        <h5>3D &amp; Animation</h5>
-
-                        <img
-                            src="./images/le_petit_prince_cover.jpg"
-                            class="project-photo-index"
-                            alt="Le Petit Prince project"
-                        >
-
-                       <a href="./projects/le-petit-prince.html" class="project-button">
-                            Le Petit Prince
-                        </a>
-                    </div>
+    <main class="index-wrapper">
 
 
-                    <div class="project-index">
-                        <h5>UI/UX Design</h5>
+        <section class="three-projects">
 
-                        <img
-                            src="./images/surf_festival_cover.png"
-                            class="project-photo-index"
-                            alt="Surf Festival project"
-                        >
-
-                        <a href="./projects/surf-festival.html" class="project-button">
-                            Surf Festival
-                        </a>
-                    </div>
+            <img
+                src="./images/noise_background.png"
+                class="backgroundnoise-index"
+                alt=""
+            >
 
 
-                    <div class="project-index">
-                        <h5>UI/UX Design</h5>
+            <h2 data-i18n="home.projectsTitle">
+                Mijn projecten
+            </h2>
 
-                        <img
-                            src="./images/smart_home_cover.png"
-                            class="project-photo-index"
-                            alt="Smart Home project"
-                        >
 
-                        <a href="./projects/smart-home.html" class="project-button">
-                            Smart Home
-                        </a>
+            <div class="projects-row">
+
+
+                <!-- ==================================================
+                     LE PETIT PRINCE
+                ================================================== -->
+
+                <div class="project-index">
+
+                    <h5 data-i18n="home.animation">
+                        3D &amp; Animation
+                    </h5>
+
+
+                    <img
+                        src="./images/le_petit_prince_cover.jpg"
+                        class="project-photo-index"
+                        alt="Le Petit Prince project"
+                    >
+
+
+                    <a
+                        href="./projects/le-petit-prince.html"
+                        class="project-button"
+                    >
+                        Le Petit Prince
+                    </a>
+
                 </div>
 
-</div>
 
 
-        <a href="projects.html" class="see-more">
-            Zie meer
-        </a>
-            </section>
+                <!-- ==================================================
+                     SURF FESTIVAL
+                ================================================== -->
 
-    <section class="skills">
+                <div class="project-index">
 
-        <h2>Hard skills</h2>
-
-        <div class="skills-filters">
-
-            <button class="skill-filter active" data-filter="uiux">
-                UI/UX Design
-            </button>
-
-            <button class="skill-filter" data-filter="3d">
-                3D &amp; Animation
-            </button>
-
-            <button class="skill-filter" data-filter="web">
-                Web Development
-            </button>
-
-        </div>
+                    <h5 data-i18n="home.uiux">
+                        UI/UX Design
+                    </h5>
 
 
-        <!-- Hard skills worden door JavaScript gemaakt -->
-        <div class="hard-skills" id="hard-skills"></div>
+                    <img
+                        src="./images/surf_festival_cover.png"
+                        class="project-photo-index"
+                        alt="Surf Festival project"
+                    >
 
 
-        <!-- Soft skills -->
+                    <a
+                        href="./projects/surf-festival.html"
+                        class="project-button"
+                    >
+                        Surf Festival
+                    </a>
 
-        <h2 class="soft-title">
-            Soft skills
-        </h2>
+                </div>
 
-        <div class="soft-skills">
 
-            <div class="soft-card">
-                <h4>Tijdsmanagement</h4>
-                <p>
-                    Ik houd rekening met deadlines en lever werk altijd
-                    op tijd in. Ik kom liever te vroeg dan te laat.
-                </p>
+
+                <!-- ==================================================
+                     SMART HOME
+                ================================================== -->
+
+                <div class="project-index">
+
+                    <h5 data-i18n="home.uiux">
+                        UI/UX Design
+                    </h5>
+
+
+                    <img
+                        src="./images/smart_home_cover.png"
+                        class="project-photo-index"
+                        alt="Smart Home project"
+                    >
+
+
+                    <a
+                        href="./projects/smart-home.html"
+                        class="project-button"
+                    >
+                        Smart Home
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="soft-card">
-                <h4>Gedisciplineerd</h4>
-                <p>
-                    Bij elke taak check ik de vereisten en technische
-                    specificaties, zodat ik alles foutloos kan indienen.
-                </p>
+
+
+            <!-- ==================================================
+                 ZIE MEER
+            ================================================== -->
+
+            <a
+                href="projects.html"
+                class="see-more"
+                data-i18n="common.seeMore"
+            >
+                Zie meer
+            </a>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             SKILLS
+        ================================================== -->
+
+        <section class="skills">
+
+
+            <h2 data-i18n="home.hardSkills">
+                Hard skills
+            </h2>
+
+
+            <div class="skills-filters">
+
+                <button
+                    class="skill-filter active"
+                    data-filter="uiux"
+                    data-i18n="home.uiux"
+                >
+                    UI/UX Design
+                </button>
+
+
+                <button
+                    class="skill-filter"
+                    data-filter="3d"
+                    data-i18n="home.animation"
+                >
+                    3D &amp; Animation
+                </button>
+
+
+                <button
+                    class="skill-filter"
+                    data-filter="web"
+                    data-i18n="home.web"
+                >
+                    Web Development
+                </button>
+
             </div>
 
-            <div class="soft-card">
-                <h4>Meertalig</h4>
-                <p>
-                    Mijn moedertaal is Nederlands. Frans en Engels
-                    spreek ik op professioneel niveau.
-                </p>
+
+
+            <!-- Hard skills worden door JavaScript gemaakt -->
+
+            <div
+                class="hard-skills"
+                id="hard-skills"
+            ></div>
+
+
+
+            <!-- ==================================================
+                 SOFT SKILLS
+            ================================================== -->
+
+            <h2
+                class="soft-title"
+                data-i18n="home.softSkills"
+            >
+                Soft skills
+            </h2>
+
+
+            <div class="soft-skills">
+
+
+                <!-- Tijdmanagement -->
+
+                <div class="soft-card">
+
+                    <h4 data-i18n="home.timeManagement">
+                        Tijdsmanagement
+                    </h4>
+
+                    <p data-i18n="home.timeManagementText">
+                        Ik houd rekening met deadlines en lever werk altijd
+                        op tijd in. Ik kom liever te vroeg dan te laat.
+                    </p>
+
+                </div>
+
+
+                <!-- Gedisciplineerd -->
+
+                <div class="soft-card">
+
+                    <h4 data-i18n="home.disciplined">
+                        Gedisciplineerd
+                    </h4>
+
+                    <p data-i18n="home.disciplinedText">
+                        Bij elke taak check ik de vereisten en technische
+                        specificaties, zodat ik alles foutloos kan indienen.
+                    </p>
+
+                </div>
+
+
+                <!-- Meertalig -->
+
+                <div class="soft-card">
+
+                    <h4 data-i18n="home.multilingual">
+                        Meertalig
+                    </h4>
+
+                    <p data-i18n="home.multilingualText">
+                        Mijn moedertaal is Nederlands. Frans en Engels
+                        spreek ik op professioneel niveau.
+                    </p>
+
+                </div>
+
+
+                <!-- Communicatie -->
+
+                <div class="soft-card">
+
+                    <h4 data-i18n="home.communication">
+                        Communicatie
+                    </h4>
+
+                    <p data-i18n="home.communicationText">
+                        Ik communiceer duidelijk over mijn mogelijkheden,
+                        beperkingen en hulpbehoefte.
+                    </p>
+
+                </div>
+
+
+                <!-- Teamwork -->
+
+                <div class="soft-card">
+
+                    <h4 data-i18n="home.teamwork">
+                        Teamwork
+                    </h4>
+
+                    <p data-i18n="home.teamworkText">
+                        Ik werk graag in team, niet alleen omdat het leuk is,
+                        maar ook omdat ik veel kan leren van anderen.
+                    </p>
+
+                </div>
+
             </div>
 
-            <div class="soft-card">
-                <h4>Communicatie</h4>
-                <p>
-                    Ik communiceer duidelijk over mijn mogelijkheden,
-                    beperkingen en hulpbehoefte.
-                </p>
-            </div>
+        </section>
 
-            <div class="soft-card">
-                <h4>Teamwork</h4>
-                <p>
-                    Ik werk graag in team, niet alleen omdat het leuk is,
-                    maar ook omdat ik veel kan leren van anderen.
-                </p>
-            </div>
 
-        </div>
 
-    </section>
+        <!-- ==================================================
+             FOOTER
+        ================================================== -->
 
         <footer class="footer">
 
             <div class="footer-content">
 
                 <nav class="footer-nav">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">Over mij</a>
-                    <a href="projects.html">Projecten</a>
-                    <a href="contact.html">Contact</a>
+
+                    <a
+                        href="index.html"
+                        data-i18n="common.home"
+                    ></a>
+
+                    <a
+                        href="about.html"
+                        data-i18n="common.about"
+                    ></a>
+
+                    <a
+                        href="projects.html"
+                        data-i18n="common.projects"
+                    ></a>
+
+                    <a
+                        href="contact.html"
+                        data-i18n="common.contact"
+                    ></a>
+
                 </nav>
 
+
                 <div class="footer-languages">
-                    <a href="#">NL</a>
+
+                    <a
+                        href="#"
+                        data-lang="nl"
+                        data-i18n="common.nl"
+                    ></a>
+
                     <span>|</span>
-                    <a href="#">FR</a>
+
+                    <a
+                        href="#"
+                        data-lang="fr"
+                        data-i18n="common.fr"
+                    ></a>
+
                     <span>|</span>
-                    <a href="#">ENG</a>
+
+                    <a
+                        href="#"
+                        data-lang="en"
+                        data-i18n="common.eng"
+                    ></a>
+
                 </div>
+
 
                 <div class="footer-socials">
 
-                    <a href="#" class="footer-social" aria-label="Social media"><img src="./images/linkedin.svg" alt=""></a>
+                    <a
+                        href="https://www.linkedin.com/in/kenza-houben-a3b9473aa/"
+                        class="footer-social"
+                        aria-label="LinkedIn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="./images/linkedin.svg"
+                            alt=""
+                        >
+                    </a>
 
-                    <a href="#" class="footer-social" aria-label="Social media"><img src="./images/artstation.svg" alt=""></a>
+
+                    <a
+                        href="https://www.artstation.com/kenzahouben"
+                        class="footer-social"
+                        aria-label="ArtStation"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="./images/artstation.svg"
+                            alt=""
+                        >
+                    </a>
 
                 </div>
 
             </div>
 
+
             <div class="footer-bottom">
-                <p>© 2026 Kenza. Alle rechten voorbehouden</p>
+
+                <p data-i18n="common.copyright">
+                    © 2026 Kenza. Alle rechten voorbehouden
+                </p>
+
             </div>
 
         </footer>
 
     </main>
+
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+    ================================================== -->
+
     <script src="js/hamburger-menu.js"></script>
     <script src="js/skills.js"></script>
-</body>
+    <script src="js/language.js"></script>
 
+</body>
 
 </html>

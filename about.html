@@ -5,25 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Over mij</title>
+    <title data-i18n="about.title">Over mij</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
 </head>
 
 
-<body class="about-body">
+<body class="about-body" data-page="about">
 
 
     <!-- ==================================================
          HAMBURGER MENU
-         ================================================== -->
+    ================================================== -->
 
     <div class="hamburger-menu">
 
         <button
             class="hamburger-button"
             aria-label="Menu openen"
+            type="button"
+            data-i18n="common.menuOpen"
+            data-i18n-attr="aria-label"
         >
             <span></span>
             <span></span>
@@ -43,6 +46,9 @@
             <button
                 class="menu-close"
                 aria-label="Menu sluiten"
+                type="button"
+                data-i18n="common.menuClose"
+                data-i18n-attr="aria-label"
             >
                 ×
             </button>
@@ -51,30 +57,60 @@
             <div class="menu-content">
 
                 <h6>
-                    <a href="index.html">Home</a>
+                    <a
+                        href="index.html"
+                        data-i18n="common.home"
+                    ></a>
                 </h6>
 
                 <h6>
-                    <a href="about.html">Over mij</a>
+                    <a
+                        href="about.html"
+                        data-i18n="common.about"
+                    ></a>
                 </h6>
 
                 <h6>
-                    <a href="projects.html">Projecten</a>
+                    <a
+                        href="projects.html"
+                        data-i18n="common.projects"
+                    ></a>
                 </h6>
 
                 <h6>
-                    <a href="contact.html">Contact</a>
+                    <a
+                        href="contact.html"
+                        data-i18n="common.contact"
+                    ></a>
                 </h6>
 
 
                 <div class="menu-languages">
 
                     <h3>
-                        <a href="#">NL</a>
+
+                        <a
+                            href="#"
+                            data-lang="nl"
+                            data-i18n="common.nl"
+                        ></a>
+
                         <span>|</span>
-                        <a href="#">FR</a>
+
+                        <a
+                            href="#"
+                            data-lang="fr"
+                            data-i18n="common.fr"
+                        ></a>
+
                         <span>|</span>
-                        <a href="#">ENG</a>
+
+                        <a
+                            href="#"
+                            data-lang="en"
+                            data-i18n="common.eng"
+                        ></a>
+
                     </h3>
 
                 </div>
@@ -86,20 +122,23 @@
     </div>
 
 
+
     <!-- ==================================================
          MAIN
-         ================================================== -->
+    ================================================== -->
 
     <main class="about-wrapper">
 
 
         <!-- ==================================================
              OVER MIJ
-             ================================================== -->
+        ================================================== -->
 
         <section class="about-intro">
 
-            <h2>Over mij</h2>
+            <h2 data-i18n="about.title">
+                Over mij
+            </h2>
 
 
             <div class="about-intro-content">
@@ -124,13 +163,13 @@
 
                 <div class="about-text">
 
-                    <p>
+                    <p data-i18n="about.intro1">
                         Hallo, ik ben Kenza Houben, en studeer momenteel
                         Multimedia en Creatieve Technologie aan de
                         Erasmushogeschool Brussel.
                     </p>
 
-                    <p>
+                    <p data-i18n="about.intro2">
                         Ik ben altijd bezig met het ontdekken van nieuwe
                         mogelijkheden in 3D en design, en streef ernaar
                         om mezelf steeds verder te ontwikkelen.
@@ -146,7 +185,7 @@
 
         <!-- ==================================================
              MIJN REIS
-             ================================================== -->
+        ================================================== -->
 
         <section class="my-journey">
 
@@ -159,12 +198,14 @@
 
             <div class="journey-content">
 
-                <h2>Mijn reis</h2>
+                <h2 data-i18n="about.journey">
+                    Mijn reis
+                </h2>
 
 
                 <!-- ==========================
                      2021
-                     ========================== -->
+                ========================== -->
 
                 <div class="journey-item">
 
@@ -185,16 +226,19 @@
 
                     <div class="journey-text">
 
-                        <h4>
+                        <h4 data-i18n="about.year2021Title">
                             Moderne talen en economie
                         </h4>
 
-                        <p class="journey-school">
+                        <p
+                            class="journey-school"
+                            data-i18n="about.year2021School"
+                        >
                             Sint-Jozefscollege in Sint-Pieters-Woluwe
                         </p>
 
 
-                        <p>
+                        <p data-i18n="about.year2021Text">
                             Na het behalen van mijn diploma Moderne Talen en
                             Economie in het middelbaar, had ik nog niet direct
                             een duidelijk beeld van mijn toekomstige loopbaan.
@@ -210,7 +254,7 @@
 
                 <!-- ==========================
                      2023
-                     ========================== -->
+                ========================== -->
 
                 <div class="journey-item">
 
@@ -231,16 +275,19 @@
 
                     <div class="journey-text">
 
-                        <h4>
+                        <h4 data-i18n="about.year2023Title">
                             Lerarenopleiding Secundair Onderwijs
                         </h4>
 
-                        <p class="journey-school">
+                        <p
+                            class="journey-school"
+                            data-i18n="about.year2023School"
+                        >
                             Erasmushogeschool Brussel
                         </p>
 
 
-                        <p>
+                        <p data-i18n="about.year2023Text1">
                             In 2023 koos ik voor de lerarenopleiding
                             secundair onderwijs, met Nederlands en
                             geschiedenis als keuzevakken. Hoewel ik deze
@@ -252,7 +299,7 @@
                         </p>
 
 
-                        <p>
+                        <p data-i18n="about.year2023Text2">
                             Ik bezocht infodagen en openlesdagen en was
                             meteen verkocht: deze richting sprak me direct
                             aan. Ondanks dat ik nog geen ervaring had in
@@ -268,7 +315,7 @@
 
                 <!-- ==========================
                      2024
-                     ========================== -->
+                ========================== -->
 
                 <div class="journey-item">
 
@@ -289,16 +336,19 @@
 
                     <div class="journey-text">
 
-                        <h4>
+                        <h4 data-i18n="about.year2024Title">
                             Multimedia en Creatieve Technologie
                         </h4>
 
-                        <p class="journey-school">
+                        <p
+                            class="journey-school"
+                            data-i18n="about.year2024School"
+                        >
                             Erasmushogeschool Brussel
                         </p>
 
 
-                        <p>
+                        <p data-i18n="about.year2024Text1">
                             Ik ben zonder enige voorkennis aan deze opleiding
                             begonnen, maar heb in de afgelopen twee jaar enorm
                             veel geleerd. Nu, in mijn laatste jaar, ben ik zelfs
@@ -306,7 +356,7 @@
                         </p>
 
 
-                        <p>
+                        <p data-i18n="about.year2024Text2">
                             Ik hou ervan om mijn creativiteit te ontdekken en
                             toe te passen in nieuwe technologieën. De afgelopen
                             jaren hebben me bevestigd: dit is wat ik later wil doen.
@@ -320,50 +370,123 @@
 
         </section>
 
-
-
-        <!-- ==================================================
-             FOOTER
-             ================================================== -->
-
-       <footer class="footer">
-
-            <div class="footer-content">
-
-                <nav class="footer-nav">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">Over mij</a>
-                    <a href="projects.html">Projecten</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
-
-                <div class="footer-languages">
-                    <a href="#">NL</a>
-                    <span>|</span>
-                    <a href="#">FR</a>
-                    <span>|</span>
-                    <a href="#">ENG</a>
-                </div>
-
-                <div class="footer-socials">
-
-                    <a href="#" class="footer-social" aria-label="Social media"><img src="./images/linkedin.svg" alt=""></a>
-
-                    <a href="#" class="footer-social" aria-label="Social media"><img src="./images/artstation.svg" alt=""></a>
-
-                </div>
-
-            </div>
-
-            <div class="footer-bottom">
-                <p>© 2026 Kenza. Alle rechten voorbehouden</p>
-            </div>
-
-        </footer>
-
     </main>
 
 
+
+    <!-- ==================================================
+         FOOTER
+    ================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <nav class="footer-nav">
+
+                <a
+                    href="index.html"
+                    data-i18n="common.home"
+                ></a>
+
+                <a
+                    href="about.html"
+                    data-i18n="common.about"
+                ></a>
+
+                <a
+                    href="projects.html"
+                    data-i18n="common.projects"
+                ></a>
+
+                <a
+                    href="contact.html"
+                    data-i18n="common.contact"
+                ></a>
+
+            </nav>
+
+
+            <div class="footer-languages">
+
+                <a
+                    href="#"
+                    data-lang="nl"
+                    data-i18n="common.nl"
+                ></a>
+
+                <span>|</span>
+
+                <a
+                    href="#"
+                    data-lang="fr"
+                    data-i18n="common.fr"
+                ></a>
+
+                <span>|</span>
+
+                <a
+                    href="#"
+                    data-lang="en"
+                    data-i18n="common.eng"
+                ></a>
+
+            </div>
+
+
+            <div class="footer-socials">
+
+                <a
+                    href="https://www.linkedin.com/in/kenza-houben-a3b9473aa/"
+                    class="footer-social"
+                    aria-label="LinkedIn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img
+                        src="./images/linkedin.svg"
+                        alt=""
+                    >
+                </a>
+
+
+                <a
+                    href="https://www.artstation.com/kenzahouben"
+                    class="footer-social"
+                    aria-label="ArtStation"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img
+                        src="./images/artstation.svg"
+                        alt=""
+                    >
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p data-i18n="common.copyright">
+                © 2026 Kenza. Alle rechten voorbehouden
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+    ================================================== -->
+
     <script src="js/hamburger-menu.js"></script>
+    <script src="js/language.js"></script>
 
 </body>
+
+</html>

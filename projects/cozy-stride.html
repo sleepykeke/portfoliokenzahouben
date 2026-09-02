@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cozy Stride</title>
+    <title data-i18n="title">Cozy Stride</title>
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/cozy-stride.css">
 </head>
 
 
-<body class="cozy-stride-body">
+<body class="cozy-stride-body" data-page="cozy">
 
 
     <!-- ==================================================
@@ -25,6 +25,8 @@
             class="hamburger-button"
             aria-label="Menu openen"
             type="button"
+            data-i18n="common.menuOpen"
+            data-i18n-attr="aria-label"
         >
             <span></span>
             <span></span>
@@ -45,6 +47,8 @@
                 class="menu-close"
                 aria-label="Menu sluiten"
                 type="button"
+                data-i18n="common.menuClose"
+                data-i18n-attr="aria-label"
             >
                 ×
             </button>
@@ -53,30 +57,60 @@
             <div class="menu-content">
 
                 <h6>
-                    <a href="../index.html">Home</a>
+                    <a
+                        href="../index.html"
+                        data-i18n="common.home"
+                    ></a>
                 </h6>
 
                 <h6>
-                    <a href="../about.html">Over mij</a>
+                    <a
+                        href="../about.html"
+                        data-i18n="common.about"
+                    ></a>
                 </h6>
 
                 <h6>
-                    <a href="../projects.html">Projecten</a>
+                    <a
+                        href="../projects.html"
+                        data-i18n="common.projects"
+                    ></a>
                 </h6>
 
                 <h6>
-                    <a href="../contact.html">Contact</a>
+                    <a
+                        href="../contact.html"
+                        data-i18n="common.contact"
+                    ></a>
                 </h6>
 
 
                 <div class="menu-languages">
 
                     <h3>
-                        <a href="#">NL</a>
+
+                        <a
+                            href="#"
+                            data-lang="nl"
+                            data-i18n="common.nl"
+                        ></a>
+
                         <span>|</span>
-                        <a href="#">FR</a>
+
+                        <a
+                            href="#"
+                            data-lang="fr"
+                            data-i18n="common.fr"
+                        ></a>
+
                         <span>|</span>
-                        <a href="#">ENG</a>
+
+                        <a
+                            href="#"
+                            data-lang="en"
+                            data-i18n="common.eng"
+                        ></a>
+
                     </h3>
 
                 </div>
@@ -99,15 +133,19 @@
             class="project-back"
             type="button"
             aria-label="Ga terug naar de vorige pagina"
+            data-i18n="common.back"
+            data-i18n-attr="aria-label"
         >
+
             <img
                 src="../images/arrow_back.svg"
                 alt=""
             >
+
         </button>
 
 
-        <h2>
+        <h2 data-i18n="title">
             Cozy Stride
         </h2>
 
@@ -150,7 +188,7 @@
                     alt=""
                 >
 
-                <h4>
+                <h4 data-i18n="assignment">
                     Opdracht
                 </h4>
 
@@ -159,7 +197,7 @@
 
             <div class="project-text">
 
-                <p>
+                <p data-i18n="assignmentText1">
                     Voor het vak Design 3 aan MCT bij Erasmushogeschool Brussel
                     kregen we de opdracht om een logo te ontwerpen voor een
                     fictief schoenenmerk, gebaseerd op schoenen die we eerder
@@ -167,7 +205,7 @@
                 </p>
 
 
-                <p>
+                <p data-i18n="assignmentText2">
                     Mijn fictieve schoenen zijn altijd comfortabel en beschikken
                     over een systeem dat ze in de zomer afkoelt en in de winter
                     verwarmt. Daarnaast gaan ze nooit kapot en worden ze nooit
@@ -206,14 +244,14 @@
                         alt=""
                     >
 
-                    <h4>
+                    <h4 data-i18n="research">
                         Onderzoek
                     </h4>
 
                 </div>
 
 
-                <p>
+                <p data-i18n="researchText">
                     Voor de schoenen wilde ik een sterk logo ontwerpen. Ik dacht
                     meteen aan een pinguïn, omdat die koelte symboliseert en
                     aansluit bij het afkoelingssysteem van de schoenen. Als
@@ -239,7 +277,7 @@
                     alt=""
                 >
 
-                <h4>
+                <h4 data-i18n="process">
                     Proces
                 </h4>
 
@@ -268,7 +306,7 @@
 
             <div class="project-text">
 
-                <p>
+                <p data-i18n="processText">
                     Ik begon met het maken van verschillende versies van mijn
                     logo, totdat ik een ontwerp vond dat het beste bij het
                     concept en de schoenen paste.
@@ -293,7 +331,7 @@
                     alt=""
                 >
 
-                <h4>
+                <h4 data-i18n="result">
                     Eindresultaat
                 </h4>
 
@@ -302,7 +340,7 @@
 
             <div class="project-text">
 
-                <p>
+                <p data-i18n="resultText">
                     Mijn campagneconcept maakt duidelijk hoe de schoenen afkoelen
                     bij warm weer en verwarmen bij koud weer.
                 </p>
@@ -325,36 +363,52 @@
 
             <nav class="footer-nav">
 
-                <a href="../index.html">
-                    Home
-                </a>
+                <a
+                    href="../index.html"
+                    data-i18n="common.home"
+                ></a>
 
-                <a href="../about.html">
-                    Over mij
-                </a>
+                <a
+                    href="../about.html"
+                    data-i18n="common.about"
+                ></a>
 
-                <a href="../projects.html">
-                    Projecten
-                </a>
+                <a
+                    href="../projects.html"
+                    data-i18n="common.projects"
+                ></a>
 
-                <a href="../contact.html">
-                    Contact
-                </a>
+                <a
+                    href="../contact.html"
+                    data-i18n="common.contact"
+                ></a>
 
             </nav>
 
 
             <div class="footer-languages">
 
-                <a href="#">NL</a>
+                <a
+                    href="#"
+                    data-lang="nl"
+                    data-i18n="common.nl"
+                ></a>
 
                 <span>|</span>
 
-                <a href="#">FR</a>
+                <a
+                    href="#"
+                    data-lang="fr"
+                    data-i18n="common.fr"
+                ></a>
 
                 <span>|</span>
 
-                <a href="#">ENG</a>
+                <a
+                    href="#"
+                    data-lang="en"
+                    data-i18n="common.eng"
+                ></a>
 
             </div>
 
@@ -362,9 +416,11 @@
             <div class="footer-socials">
 
                 <a
-                    href="#"
+                    href="https://www.linkedin.com/in/kenza-houben-a3b9473aa/"
                     class="footer-social"
                     aria-label="LinkedIn"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
                     <img
                         src="../images/linkedin.svg"
@@ -374,9 +430,11 @@
 
 
                 <a
-                    href="#"
+                    href="https://www.artstation.com/kenzahouben"
                     class="footer-social"
                     aria-label="ArtStation"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
                     <img
                         src="../images/artstation.svg"
@@ -391,7 +449,7 @@
 
         <div class="footer-bottom">
 
-            <p>
+            <p data-i18n="common.copyright">
                 © 2026 Kenza. Alle rechten voorbehouden
             </p>
 
@@ -401,8 +459,13 @@
 
 
 
+    <!-- ==================================================
+         JAVASCRIPT
+    ================================================== -->
+
     <script src="../js/hamburger-menu.js"></script>
     <script src="../js/project-back.js"></script>
+    <script src="../js/language.js"></script>
 
 </body>
 

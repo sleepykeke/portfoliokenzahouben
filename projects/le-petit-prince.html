@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Le Petit Prince</title>
+    <title data-i18n="title">Le Petit Prince</title>
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/le-petit-prince.css">
 </head>
 
 
-<body class="le-petit-prince-body">
+<body class="le-petit-prince-body" data-page="lePetitPrince">
 
 
     <!-- ==================================================
@@ -25,6 +25,8 @@
             class="hamburger-button"
             aria-label="Menu openen"
             type="button"
+            data-i18n="common.menuOpen"
+            data-i18n-attr="aria-label"
         >
             <span></span>
             <span></span>
@@ -45,6 +47,8 @@
                 class="menu-close"
                 aria-label="Menu sluiten"
                 type="button"
+                data-i18n="common.menuClose"
+                data-i18n-attr="aria-label"
             >
                 ×
             </button>
@@ -53,30 +57,60 @@
             <div class="menu-content">
 
                 <h6>
-                    <a href="../index.html">Home</a>
+                    <a
+                        href="../index.html"
+                        data-i18n="common.home"
+                    ></a>
                 </h6>
 
                 <h6>
-                    <a href="../about.html">Over mij</a>
+                    <a
+                        href="../about.html"
+                        data-i18n="common.about"
+                    ></a>
                 </h6>
 
                 <h6>
-                    <a href="../projects.html">Projecten</a>
+                    <a
+                        href="../projects.html"
+                        data-i18n="common.projects"
+                    ></a>
                 </h6>
 
                 <h6>
-                    <a href="../contact.html">Contact</a>
+                    <a
+                        href="../contact.html"
+                        data-i18n="common.contact"
+                    ></a>
                 </h6>
 
 
                 <div class="menu-languages">
 
                     <h3>
-                        <a href="#">NL</a>
+
+                        <a
+                            href="#"
+                            data-lang="nl"
+                            data-i18n="common.nl"
+                        ></a>
+
                         <span>|</span>
-                        <a href="#">FR</a>
+
+                        <a
+                            href="#"
+                            data-lang="fr"
+                            data-i18n="common.fr"
+                        ></a>
+
                         <span>|</span>
-                        <a href="#">ENG</a>
+
+                        <a
+                            href="#"
+                            data-lang="en"
+                            data-i18n="common.eng"
+                        ></a>
+
                     </h3>
 
                 </div>
@@ -99,15 +133,19 @@
             class="project-back"
             type="button"
             aria-label="Ga terug naar de vorige pagina"
+            data-i18n="common.back"
+            data-i18n-attr="aria-label"
         >
+
             <img
                 src="../images/arrow_back.svg"
                 alt=""
             >
+
         </button>
 
 
-        <h2>
+        <h2 data-i18n="title">
             Le Petit Prince
         </h2>
 
@@ -152,7 +190,7 @@
                     alt=""
                 >
 
-                <h4>
+                <h4 data-i18n="assignment">
                     Opdracht
                 </h4>
 
@@ -161,7 +199,7 @@
 
             <div class="project-text">
 
-                <p>
+                <p data-i18n="assignmentText">
                     Voor het vak 3D Modeling &amp; Animatie aan MCT bij
                     Erasmushogeschool Brussel kregen we de opdracht om een
                     kortfilm van 20 seconden tot 1 minuut te maken. Het verhaal
@@ -190,7 +228,10 @@
                     alt="Referentie van Le Petit Prince"
                 >
 
-                <p class="image-source">
+                <p
+                    class="image-source"
+                    data-i18n="source"
+                >
                     The Little Prince, 2015 animated film directed
                     by Mark Osborne
                 </p>
@@ -207,19 +248,19 @@
                         alt=""
                     >
 
-                    <h4>
+                    <h4 data-i18n="research">
                         Onderzoek
                     </h4>
 
                 </div>
 
 
-                <p>
+                <p data-i18n="researchText1">
                     Voor mijn project koos ik het personage Le Petit Prince,
                     specifiek het ontwerp uit de film van Mark Osborne (2015).
                 </p>
 
-                <p>
+                <p data-i18n="researchText2">
                     Voordat ik begon met modelleren in Maya, zocht ik eerst
                     goede referentiefoto’s om als basis te gebruiken.
                 </p>
@@ -262,14 +303,14 @@
                             alt=""
                         >
 
-                        <h4>
+                        <h4 data-i18n="process">
                             Proces
                         </h4>
 
                     </div>
 
 
-                    <p>
+                    <p data-i18n="processText1">
                         Tijdens het modelleren kreeg ik feedback van mijn docent,
                         waarbij bleek dat er in het begin van mijn model een aantal
                         grote fouten zaten. Daarom ben ik opnieuw begonnen.
@@ -291,12 +332,12 @@
 
                 <div class="process-text">
 
-                    <p>
+                    <p data-i18n="processText2">
                         Toen mijn model in Maya klaar was, ben ik in Adobe Substance
                         Painter begonnen met het textureren.
                     </p>
 
-                    <p>
+                    <p data-i18n="processText3">
                         Tijdens dit proces begon ik me steeds meer te verdiepen
                         in de setting en het scenario waarin mijn karakter zich
                         zou bevinden.
@@ -326,7 +367,7 @@
 
                 <div class="process-text">
 
-                    <p>
+                    <p data-i18n="propsIntro">
                         Uiteindelijk besloot ik om een aantal props bij te
                         modelleren, zoals:
                     </p>
@@ -334,22 +375,22 @@
 
                     <ul>
 
-                        <li>
+                        <li data-i18n="planet">
                             De planeten uit het boek
                         </li>
 
-                        <li>
+                        <li data-i18n="plane">
                             Het vliegtuig van Le Petit Prince
                         </li>
 
-                        <li>
+                        <li data-i18n="rose">
                             Zijn vriendin, de roos
                         </li>
 
                     </ul>
 
 
-                    <p>
+                    <p data-i18n="processText4">
                         Ik had ook een lantaarn en een boom gemodelleerd, maar deze
                         heb ik uiteindelijk niet meegenomen in mijn definitieve
                         ontwerp, omdat ze niet voldeden aan mijn verwachtingen.
@@ -418,7 +459,7 @@
                     alt=""
                 >
 
-                <h4>
+                <h4 data-i18n="result">
                     Eindresultaat
                 </h4>
 
@@ -427,7 +468,7 @@
 
             <div class="project-text">
 
-                <p>
+                <p data-i18n="resultText">
                     Uiteindelijk heb ik de video anders ingevuld dan oorspronkelijk
                     gepland. In plaats van de planeten uit het boek te modelleren,
                     gaf ik elke planeet een eigen personage – gebaseerd op de
@@ -474,36 +515,52 @@
 
             <nav class="footer-nav">
 
-                <a href="../index.html">
-                    Home
-                </a>
+                <a
+                    href="../index.html"
+                    data-i18n="common.home"
+                ></a>
 
-                <a href="../about.html">
-                    Over mij
-                </a>
+                <a
+                    href="../about.html"
+                    data-i18n="common.about"
+                ></a>
 
-                <a href="../projects.html">
-                    Projecten
-                </a>
+                <a
+                    href="../projects.html"
+                    data-i18n="common.projects"
+                ></a>
 
-                <a href="../contact.html">
-                    Contact
-                </a>
+                <a
+                    href="../contact.html"
+                    data-i18n="common.contact"
+                ></a>
 
             </nav>
 
 
             <div class="footer-languages">
 
-                <a href="#">NL</a>
+                <a
+                    href="#"
+                    data-lang="nl"
+                    data-i18n="common.nl"
+                ></a>
 
                 <span>|</span>
 
-                <a href="#">FR</a>
+                <a
+                    href="#"
+                    data-lang="fr"
+                    data-i18n="common.fr"
+                ></a>
 
                 <span>|</span>
 
-                <a href="#">ENG</a>
+                <a
+                    href="#"
+                    data-lang="en"
+                    data-i18n="common.eng"
+                ></a>
 
             </div>
 
@@ -511,9 +568,11 @@
             <div class="footer-socials">
 
                 <a
-                    href="#"
+                    href="https://www.linkedin.com/in/kenza-houben-a3b9473aa/"
                     class="footer-social"
                     aria-label="LinkedIn"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
                     <img
                         src="../images/linkedin.svg"
@@ -523,9 +582,11 @@
 
 
                 <a
-                    href="#"
+                    href="https://www.artstation.com/kenzahouben"
                     class="footer-social"
                     aria-label="ArtStation"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
                     <img
                         src="../images/artstation.svg"
@@ -540,7 +601,7 @@
 
         <div class="footer-bottom">
 
-            <p>
+            <p data-i18n="common.copyright">
                 © 2026 Kenza. Alle rechten voorbehouden
             </p>
 
@@ -556,6 +617,7 @@
 
     <script src="../js/hamburger-menu.js"></script>
     <script src="../js/project-back.js"></script>
+    <script src="../js/language.js"></script>
 
 </body>
 

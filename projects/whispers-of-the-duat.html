@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Whispers of the Duat</title>
+    <title data-i18n="title">Whispers of the Duat</title>
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/whispers-of-the-duat.css">
 </head>
 
 
-<body class="whispers-of-the-duat-body">
+<body class="whispers-of-the-duat-body" data-page="whispers">
 
 
     <!-- ==================================================
@@ -25,6 +25,8 @@
             class="hamburger-button"
             aria-label="Menu openen"
             type="button"
+            data-i18n="common.menuOpen"
+            data-i18n-attr="aria-label"
         >
             <span></span>
             <span></span>
@@ -45,6 +47,8 @@
                 class="menu-close"
                 aria-label="Menu sluiten"
                 type="button"
+                data-i18n="common.menuClose"
+                data-i18n-attr="aria-label"
             >
                 ×
             </button>
@@ -53,30 +57,60 @@
             <div class="menu-content">
 
                 <h6>
-                    <a href="../index.html">Home</a>
+                    <a
+                        href="../index.html"
+                        data-i18n="common.home"
+                    ></a>
                 </h6>
 
                 <h6>
-                    <a href="../about.html">Over mij</a>
+                    <a
+                        href="../about.html"
+                        data-i18n="common.about"
+                    ></a>
                 </h6>
 
                 <h6>
-                    <a href="../projects.html">Projecten</a>
+                    <a
+                        href="../projects.html"
+                        data-i18n="common.projects"
+                    ></a>
                 </h6>
 
                 <h6>
-                    <a href="../contact.html">Contact</a>
+                    <a
+                        href="../contact.html"
+                        data-i18n="common.contact"
+                    ></a>
                 </h6>
 
 
                 <div class="menu-languages">
 
                     <h3>
-                        <a href="#">NL</a>
+
+                        <a
+                            href="#"
+                            data-lang="nl"
+                            data-i18n="common.nl"
+                        ></a>
+
                         <span>|</span>
-                        <a href="#">FR</a>
+
+                        <a
+                            href="#"
+                            data-lang="fr"
+                            data-i18n="common.fr"
+                        ></a>
+
                         <span>|</span>
-                        <a href="#">ENG</a>
+
+                        <a
+                            href="#"
+                            data-lang="en"
+                            data-i18n="common.eng"
+                        ></a>
+
                     </h3>
 
                 </div>
@@ -99,15 +133,19 @@
             class="project-back"
             type="button"
             aria-label="Ga terug naar de vorige pagina"
+            data-i18n="common.back"
+            data-i18n-attr="aria-label"
         >
+
             <img
                 src="../images/arrow_back.svg"
                 alt=""
             >
+
         </button>
 
 
-        <h2>
+        <h2 data-i18n="title">
             Whispers of the Duat
         </h2>
 
@@ -152,7 +190,7 @@
                     alt=""
                 >
 
-                <h4>
+                <h4 data-i18n="assignment">
                     Opdracht
                 </h4>
 
@@ -161,7 +199,7 @@
 
             <div class="project-text">
 
-                <p>
+                <p data-i18n="assignmentText">
                     Voor het vak 3D Games aan MCT bij Erasmushogeschool Brussel
                     moesten we in Unity een point-and-click-adventuregame maken
                     met één level en verschillende puzzels. Dit project voerde
@@ -187,7 +225,10 @@
                     alt="The Legend of Zelda: Link's Awakening"
                 >
 
-                <p class="image-source">
+                <p
+                    class="image-source"
+                    data-i18n="source"
+                >
                     The Legend of Zelda: Link's Awakening (2019) by Nintendo
                 </p>
 
@@ -203,21 +244,21 @@
                         alt=""
                     >
 
-                    <h4>
+                    <h4 data-i18n="research">
                         Onderzoek
                     </h4>
 
                 </div>
 
 
-                <p>
+                <p data-i18n="researchText1">
                     We zijn begonnen met het maken van een moodboard. Hierin
                     bespraken we vragen zoals: Welk genre willen we? en Hoe moet
                     het spel eruitzien?
                 </p>
 
 
-                <p>
+                <p data-i18n="researchText2">
                     Ieder van ons maakte een eigen moodboard, die we later
                     combineerden tot één overzicht. Ik stelde voor om de omgeving
                     te baseren op The Legend of Zelda: Link’s Awakening (2019),
@@ -252,14 +293,14 @@
                             alt=""
                         >
 
-                        <h4>
+                        <h4 data-i18n="process">
                             Proces
                         </h4>
 
                     </div>
 
 
-                    <p>
+                    <p data-i18n="processText1">
                         Na ons onderzoek verdeelden we de taken. Ik was
                         voornamelijk verantwoordelijk voor de environment
                         van het spel. Hiervoor zocht ik gratis low-poly
@@ -268,22 +309,22 @@
                     </p>
 
 
-                    <p>
+                    <p data-i18n="processText2">
                         Daarnaast hielp ik ook met spelmechanieken, zoals:
                     </p>
 
 
                     <ul>
 
-                        <li>
+                        <li data-i18n="enemy">
                             Vijanden die beperkt bleven tot één ruimte
                         </li>
 
-                        <li>
+                        <li data-i18n="hearts">
                             Het hartensysteem
                         </li>
 
-                        <li>
+                        <li data-i18n="etc">
                             Etc.
                         </li>
 
@@ -301,7 +342,7 @@
 
             <div class="process-text-block">
 
-                <p>
+                <p data-i18n="processText3">
                     Mijn groepsgenoot richtte zich vooral op de logica van
                     het spel. Voor de puzzels bedachten we elk een eigen idee:
                 </p>
@@ -309,12 +350,12 @@
 
                 <ul>
 
-                    <li>
+                    <li data-i18n="maze">
                         Hij stelde voor om een doolhof te maken waar de speler
                         aan het einde een sleutel moest vinden.
                     </li>
 
-                    <li>
+                    <li data-i18n="enemyPuzzle">
                         Ik bedacht een puzzel waarbij de speler alle vijanden
                         in een ruimte moest verslaan.
                     </li>
@@ -322,7 +363,7 @@
                 </ul>
 
 
-                <p>
+                <p data-i18n="processText4">
                     We hadden aanvankelijk vier puzzels gepland, maar besloten
                     uiteindelijk om er drie te maken. Deze keuze maakt het
                     ontwerp van de dungeon overzichtelijker en haalbaarder.
@@ -364,7 +405,7 @@
                         alt=""
                     >
 
-                    <h4>
+                    <h4 data-i18n="result">
                         Eindresultaat
                     </h4>
 
@@ -380,7 +421,7 @@
                     </p>
 
 
-                    <p>
+                    <p data-i18n="resultText">
                         Uiteindelijk resulteerde dit in een klein, maar leuk
                         dungeon-level, sterk geïnspireerd op The Legend of Zelda:
                         Link’s Awakening (2019).
@@ -416,36 +457,52 @@
 
             <nav class="footer-nav">
 
-                <a href="../index.html">
-                    Home
-                </a>
+                <a
+                    href="../index.html"
+                    data-i18n="common.home"
+                ></a>
 
-                <a href="../about.html">
-                    Over mij
-                </a>
+                <a
+                    href="../about.html"
+                    data-i18n="common.about"
+                ></a>
 
-                <a href="../projects.html">
-                    Projecten
-                </a>
+                <a
+                    href="../projects.html"
+                    data-i18n="common.projects"
+                ></a>
 
-                <a href="../contact.html">
-                    Contact
-                </a>
+                <a
+                    href="../contact.html"
+                    data-i18n="common.contact"
+                ></a>
 
             </nav>
 
 
             <div class="footer-languages">
 
-                <a href="#">NL</a>
+                <a
+                    href="#"
+                    data-lang="nl"
+                    data-i18n="common.nl"
+                ></a>
 
                 <span>|</span>
 
-                <a href="#">FR</a>
+                <a
+                    href="#"
+                    data-lang="fr"
+                    data-i18n="common.fr"
+                ></a>
 
                 <span>|</span>
 
-                <a href="#">ENG</a>
+                <a
+                    href="#"
+                    data-lang="en"
+                    data-i18n="common.eng"
+                ></a>
 
             </div>
 
@@ -453,9 +510,11 @@
             <div class="footer-socials">
 
                 <a
-                    href="#"
+                    href="https://www.linkedin.com/in/kenza-houben-a3b9473aa/"
                     class="footer-social"
                     aria-label="LinkedIn"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
                     <img
                         src="../images/linkedin.svg"
@@ -465,9 +524,11 @@
 
 
                 <a
-                    href="#"
+                    href="https://www.artstation.com/kenzahouben"
                     class="footer-social"
                     aria-label="ArtStation"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
                     <img
                         src="../images/artstation.svg"
@@ -482,7 +543,7 @@
 
         <div class="footer-bottom">
 
-            <p>
+            <p data-i18n="common.copyright">
                 © 2026 Kenza. Alle rechten voorbehouden
             </p>
 
@@ -492,8 +553,13 @@
 
 
 
+    <!-- ==================================================
+         JAVASCRIPT
+    ================================================== -->
+
     <script src="../js/hamburger-menu.js"></script>
     <script src="../js/project-back.js"></script>
+    <script src="../js/language.js"></script>
 
 </body>
 
