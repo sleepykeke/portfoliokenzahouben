@@ -367,15 +367,12 @@
 
     .about-intro h2 {
         margin: 0 0 1rem 1rem;
-
         text-align: left;
     }
 
     .about-intro-content {
         flex-direction: column;
-
         gap: 0.5rem;
-
         align-items: flex-start;
     }
 
@@ -386,24 +383,20 @@
 
     .about-image-area {
         flex: none;
-
         width: 18rem;
         height: 13rem;
-
         margin-top: -0.5rem;
     }
 
     .about-image-back {
         width: 8rem;
         height: 2.5rem;
-
         border-radius: 0.8rem;
     }
 
     .about-image {
         top: 0.4rem;
         left: 1.5rem;
-
         width: 10rem;
         height: 10rem;
 

@@ -36,10 +36,14 @@ h2,
 h3,
 h4,
 h5,
+h6,
 .skill-title,
 .skill-filter,
+.project-filter,
+.project-card-category,
 .project-button,
-.see-more  {
+.project-card-button,
+.see-more {
     font-family: Righteous, sans-serif;
     letter-spacing: 0.02rem;
 }
@@ -67,8 +71,11 @@ h5 {
 }
 
 h6 {
-    font-family: Righteous, sans-serif;
-    font-size: 3.75rem; /* 60px */
+    font-size: 3.75rem;
+}
+
+.project-card-category {
+    font-size: 0.75rem;
 }
 
 p {

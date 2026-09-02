@@ -4,51 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+
+    <title>Projecten</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/projects.css">
 </head>
 
+
 <body class="projects-body">
 
-  <!-- Hamburger menu -->
+
+    <!-- ==================================================
+         HAMBURGER MENU
+         ================================================== -->
+
     <div class="hamburger-menu">
 
-        <!-- Hamburger knop -->
-        <button class="hamburger-button" aria-label="Menu openen">
+        <button
+            class="hamburger-button"
+            aria-label="Menu openen"
+        >
             <span></span>
             <span></span>
             <span></span>
         </button>
 
 
-        <!-- Menu overlay -->
         <nav class="menu-overlay">
 
-            <!-- Noise achtergrond -->
             <img
                 src="./images/noise_background.png"
                 class="menu-backgroundnoise"
                 alt=""
             >
 
-            <!-- Sluitknop -->
-            <button class="menu-close" aria-label="Menu sluiten">
+
+            <button
+                class="menu-close"
+                aria-label="Menu sluiten"
+            >
                 ×
             </button>
 
 
-            <!-- Navigatie -->
             <div class="menu-content">
 
-                <h6><a href="index.html">Home</a></h6>
-                <h6><a href="about.html">Over mij</a></h6>
-                <h6><a href="projects.html">Projecten</a></h6>
-                <h6><a href="contact.html">Contact</a></h6>
+                <h6>
+                    <a href="index.html">Home</a>
+                </h6>
 
-                <!-- Talen -->
+                <h6>
+                    <a href="about.html">Over mij</a>
+                </h6>
+
+                <h6>
+                    <a href="projects.html">Projecten</a>
+                </h6>
+
+                <h6>
+                    <a href="contact.html">Contact</a>
+                </h6>
+
+
                 <div class="menu-languages">
+
                     <h3>
                         <a href="#">NL</a>
                         <span>|</span>
@@ -56,6 +76,7 @@
                         <span>|</span>
                         <a href="#">ENG</a>
                     </h3>
+
                 </div>
 
             </div>
@@ -65,57 +86,171 @@
     </div>
 
 
-    <!-- Intro -->
-    <header class="header-wrapper">
 
-       
+    <!-- ==================================================
+         PROJECTEN
+         ================================================== -->
 
-    </header>
+    <main class="projects-wrapper">
+
+        <section class="projects-section">
+
+
+            <!-- Noise achtergrond -->
+
+            <img
+                src="./images/noise_background.png"
+                class="projects-background"
+                alt=""
+            >
+
+
+            <div class="projects-content">
+
+
+                <!-- Titel -->
+
+                <h2>
+                    Mijn projecten
+                </h2>
+
+
+                <!-- Filters -->
+
+                <div class="projects-filters">
+
+                    <button
+                        class="project-filter active"
+                        data-filter="all"
+                        type="button"
+                    >
+                        Alles
+                    </button>
+
+
+                    <button
+                        class="project-filter"
+                        data-filter="uiux"
+                        type="button"
+                    >
+                        UI/UX Design
+                    </button>
+
+
+                    <button
+                        class="project-filter"
+                        data-filter="3d"
+                        type="button"
+                    >
+                        3D &amp; Animatie
+                    </button>
+
+                </div>
+
+
+                <!-- Projecten worden door JavaScript gemaakt -->
+
+                <div
+                    class="projects-grid"
+                    id="projects-grid"
+                ></div>
+
+            </div>
+
+        </section>
 
 
 
-        <main class="projects-wrapper">
-
-        
+        <!-- ==================================================
+             FOOTER
+             ================================================== -->
 
         <footer class="footer">
 
             <div class="footer-content">
 
                 <nav class="footer-nav">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">Over mij</a>
-                    <a href="projects.html">Projecten</a>
-                    <a href="contact.html">Contact</a>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="about.html">
+                        Over mij
+                    </a>
+
+                    <a href="projects.html">
+                        Projecten
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
                 </nav>
 
+
                 <div class="footer-languages">
+
                     <a href="#">NL</a>
+
                     <span>|</span>
+
                     <a href="#">FR</a>
+
                     <span>|</span>
+
                     <a href="#">ENG</a>
+
                 </div>
+
 
                 <div class="footer-socials">
 
-                    <a href="#" class="footer-social" aria-label="Social media"><img src="./images/linkedin.svg" alt=""></a>
+                    <a
+                        href="#"
+                        class="footer-social"
+                        aria-label="LinkedIn"
+                    >
+                        <img
+                            src="./images/linkedin.svg"
+                            alt=""
+                        >
+                    </a>
 
-                    <a href="#" class="footer-social" aria-label="Social media"><img src="./images/artstation.svg" alt=""></a>
+
+                    <a
+                        href="#"
+                        class="footer-social"
+                        aria-label="ArtStation"
+                    >
+                        <img
+                            src="./images/artstation.svg"
+                            alt=""
+                        >
+                    </a>
 
                 </div>
 
             </div>
 
+
             <div class="footer-bottom">
-                <p>© 2026 Kenza. Alle rechten voorbehouden</p>
+
+                <p>
+                    © 2026 Kenza. Alle rechten voorbehouden
+                </p>
+
             </div>
 
         </footer>
 
     </main>
-    <script src="js/hamburger-menu.js"></script>
-</body>
 
+
+    <script src="js/hamburger-menu.js"></script>
+    <script src="js/projects.js"></script>
+
+</body>
 
 </html>
